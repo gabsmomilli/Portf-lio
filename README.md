@@ -44,18 +44,6 @@ Filtros para melhor aplicação dos dados
 | Seguir os conceitos da metodologia ágil	         | RNF01  |
 | Scrum                  | RNF02  |
 
-### - User Stories
-
-| Quem?                          |O que?  | Por que? |
-|------------------------------------------------------|--------|
-| FATEC         | 	Avaliar os conhecimentos de seus alunos dentro da aplicação do projeto integrador |  alunos dentro da aplicação do projeto integrador	Para colocar seus alunos em situações reais de mercado e de aplicação de projetos profissionais|
-| População                 | Otimizar a experiência do usuário em indicação de séries  | Os serviços de stream geralmente indicam filmes e series produzidos por eles mesmo, ignorando a relevancia de nota, e apenas do genero. HeySeries leva em consideração o genero, nota e data de lançamento|
-| Vitoriosos | Entregar ao cliente o serviço um sistema de qualidade que contenha os recursos que foram solicitados pelo mesmo | Para aplicar na prática os conhecimentos de programação adquiridos, além de adquirir experiência profissional em desenvolvimento de projetos. Além de descobrir novas series para si|
-
-### - Recursos de inovação
-- Filtros que permitem organizar as informações por genero, data de lançamento e nota.
-- Análise gráfica das informações coletadas pela plataforma de web scraping.
-
 ### - Tecnologias 
 Foi introduzido a linguagem Python e nosso meio academico, logo o grupo entrou em consenço para utilizá-la. Como todo o grupo Vitoriosos destinguia de conhecimentos sobre desenvolvimento e nomenclaturas como "raspagem de dados", ocorreu um pouco de dificuldade na comunicação com os professores. Por fim realizamos a raspagem de dados com sucesso, porém precisavamos armazená-los em algum lugar, no caso um banco de dados. Devido a baixa granularidade dos dados, resolvemos optar por um banco de dados não relacional, onde uma unica tabela armazenaria o nome da serie, genero, data de lançamento e nota; sendo ele o CouchDB. Para fazer esta "ponte" entre os dados e a interface grafica, foi utilizada a framework Flask. E por sim, nosso frontend foi desenvolvido utilizando HTML, CSS e Javascript para interface e a manipulação dos dados, que no caso seria a filtragem dos dados mostardos.
 
