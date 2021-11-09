@@ -58,6 +58,9 @@ A primeira parte do projeto foi coletar os dados de um site que daria notas as s
 - Coleta de dados
 - Armazenamento no banco de dados
 
+- Como logar no CouchDB
+![login couchdb](https://user-images.githubusercontent.com/55815856/141023643-b801c2e9-99aa-4a64-a266-1d41c992f9ba.PNG)
+
 
 
 
