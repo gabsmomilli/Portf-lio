@@ -73,7 +73,11 @@ Por fim eu fui a primeira a conseguir raspar os dados do site OMELETE (https://w
 
 ![image](https://user-images.githubusercontent.com/55815856/141889579-7efcc2a8-58ef-470e-9838-3af923fbce9c.png)
 
-- Armazenamento no banco de dados
+![puxando dados necessarios](https://user-images.githubusercontent.com/55815856/141889757-f9f27295-51e1-454f-a92d-f112f4c435f9.PNG)
+
+- Armazenamento no banco de dados:
+
+
 - Como logar no CouchDB:
 
 ![login couchdb](https://user-images.githubusercontent.com/55815856/141023643-b801c2e9-99aa-4a64-a266-1d41c992f9ba.PNG)
