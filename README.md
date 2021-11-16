@@ -1,9 +1,6 @@
-# Portifólio
+# Web Bot - HeySeries
 
-## Web Bot - HeySeries
-
-### - Descrição do projeto:
-
+## - Descrição do projeto:
 
 O Projeto Integrador HeySeries visa estimular o desenvolvimento dos alunos do 1° semestre de Banco de Dados da FATEC de São José dos Campos. Sendo proposto um desafio ao contrário, onde os professores deram a solução para que os grupos determinassem o problema. 
 
@@ -18,6 +15,9 @@ Logo escolhemos o nome HeySeries, fazendo referência inteligencia artificial da
 A ideia foi a de desenvolver uma aplicação web bot que faria raspagem de dados em um site, coletando dados referentes a seriados, seus respectivos gêneros, ano de lançamento e nota, sendo armazenados em um banco de dados, onde os mesmos serão disponibilizados para o front-end otimizar a experiência do usuário ao buscar por séries com melhores notas.
 
 No desenvolver do projeto, foi validado com o cliente o que seria o MÍNIMO PRODUTO VIÁVEL, sendo determinado como uma raspagem simples de um único site de séries, junto de seus respectivos dados. Mostrando apenas as 10 melhores series com maiores notas.
+
+Para o desenvolviento da aplicação o grupo se subdividiu para organizar as tarefas. Inicialmente seria um time back-end e outro front-end.
+- BACK: procuraram cursos gratuitos que ensinassem como raspar dados de um site utilizando python. A organização deste time foi quase nula, já que os dois membros basicamente procuraram as respostas separdamente, assim tomando o dobro de tempo por falta de comunição. Por fim, um destes alunos conseguiu exito nesta tarefa e conseguiu "colher" alguns dados como "teste"
 
 
 ### - Cliente
