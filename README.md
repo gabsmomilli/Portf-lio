@@ -31,7 +31,7 @@ Para o desenvolvimento da aplicação o grupo se subdividiu para organizar as ta
 Por fim o projeto teve algumas dificuldades, perca de alguns colegas desistentes do curso, porém, em geral, o grupo foi o melhor e único a tirar 10!
 
 ## - Tecnologias 
-Foi introduzido a linguagem Python e nosso meio academico, logo o grupo entrou em consenço para utilizá-la. Como todo o grupo destinguia de conhecimentos sobre desenvolvimento e nomenclaturas como "raspagem de dados", ocorreu um pouco de dificuldade na comunicação entre eles e com os professores. Por fim realizaram a raspagem de dados com sucesso utilizando um pacote chamado Beautiful Soup, porém sem armazená-los em algum lugar. Devido a baixa granularidade dos dados, resolveram optar por um banco de dados não relacional, armazenariam o nome da serie, genero, data de lançamento e nota em formato de Json; sendo ele o CouchDB. Para fazer esta "ponte" entre os dados e a interface grafica, foi utilizada a framework Flask. E por fim, o frontend foi desenvolvido utilizando HTML, CSS e Javascript para interface e a manipulação dos dados, que no caso seria a filtragem dos dados mostardos.
+Foi introduzido a linguagem Python para os alunos do 1° semestre, logo projeto deveria seguir com o desenvolvimento com a mesma. Como o a equipe destinguia de conhecimentos sobre desenvolvimento e nomenclaturas como "raspagem de dados", logo a dificuldade na comunicação entre eles e com os professores se manifestou. Por fim realizaram a raspagem de dados com sucesso, utilizando um pacote chamado Beautiful Soup, porém sem armazená-los em algum local. Devido a baixa granularidade dos dados, foi definido o uso de um banco de dados não relacional, armazenariam o nome da serie, genero, data de lançamento e nota em formato de Json; sendo ele o CouchDB. Para fazer a conexão entre os dados e a interface gráfica, foi empregada a framework Flask. E por fim, o frontend foi desenvolvido utilizando HTML, CSS e Javascript para interface e a manipulação dos dados, ato seria a filtragem dos dados mostrados.
 
 - Python:
   Linguagem de programação, desenvolvida para ser simples, fácil de aprender e versátil, logo, para ser utilizá-la em diversas atividades. Sendo ótima para ser a 1° linguagem de se aprender, também é uma das mais utilizadas no mundo e valorizada por poder ser  utilizada em diversas áreas, pode se diferenciar de outras linguagens.
@@ -42,25 +42,27 @@ Foi introduzido a linguagem Python e nosso meio academico, logo o grupo entrou e
 - Flask:
   Micro-framework multiplataforma escrito em Python para gerenciamento no mesmo e disponível em código aberto, oferece um modelo simples para desenvolvimento web. Neste caso lançando as informações do banco de dados até o front-end.
   
-- CouchDB
+- CouchDB:
   Banco de dados NoSQL orientado a documentos. Utiliza JSON como formato de dados e JavaScript como linguagem de consulta. Diferente da maioria  dos outros bancos de dados, seu conteúdo é acessado e modificado através de uma API REST.
 
-- Javacript
+- Javacript:
   Linguagem de programação que permite a criação de conteúdos que se atualizam dinamicamente,  controla multimídias, imagens animadas, pesquisas por filtros, entre outros.
 
 ## Contribuições individuais
 
-Sendo designada para equipe de back-end, fui responsavel pela primeira parte do projeto, que no caso seria a propria raspagem de dados. Como estava trabalhando com Python, procurei algo compativel para ajudar neste processo. Literalmente procurei "raspagem de dados python" e varios videos apareceram no Google. O pacote Beautiful Soup era o mais citado dentre os links e videos, então decidi tentar implementá-lo.
+Para desenvolver o back-end do projeto, foi decidido a aproveitamento da linguagem Python e o uso das bibliotecas compativeis com a mesma. Literalmente foi pesquisado por "raspagem de dados" no Google e varios videos e passo-a-passo apontados. O pacote Beautiful Soup era o mais citado dentre os links, logo foi decidido a implemenção. 
 
-Por fim consegui raspar os dados do site IMDB :
+Deve ser importado no inicio da classe, conforme a figura a baixo:
+
+![image](https://user-images.githubusercontent.com/55815856/142081595-0be8f770-2b7b-42d1-9b62-60a945e39e26.png)
+
+Declarar o site que deseja consumir:
 
 https://www.imdb.com/search/title/?title_type=tv_series&release_date=1980-01-01,2019-12-31&user_rating=,%27%2710.0&count=250
 
-- Puxando site IMDB:
-
 ![gfhadgfadgaidaygafgoaehgouaehg](https://user-images.githubusercontent.com/55815856/141889016-3b3472d9-ccda-4ad0-ba75-1c31019e81ac.PNG)
 
-E logo comecei a selecionar os dados mais relavantes para nossa API consumir:
+Selecionando dados relavantes para API consumir:
 
 - Coleta de dados expecificos:
 
@@ -68,13 +70,13 @@ E logo comecei a selecionar os dados mais relavantes para nossa API consumir:
     Botão direito do mouse -> Inspecionar -> Elementos
     ![image](https://user-images.githubusercontent.com/55815856/141889579-7efcc2a8-58ef-470e-9838-3af923fbce9c.png)
  
-    - Como estes dados são "capturados" pelo pacote Beautiful Soup:
+    - Como os dados são "capturados" pelo pacote Beautiful Soup:
     Utilizando a visualização fornecida pelo browser, pode-se ver o caminho para submeter tal dado.
     ![puxando dados necessarios](https://user-images.githubusercontent.com/55815856/141889757-f9f27295-51e1-454f-a92d-f112f4c435f9.PNG)
 
-Encontrei dificuldades em paginar, já que seriam muitas paginas este processo. Conversei com meus colegas e com alguns professores, diante desta situação entramos em consenço de que não teria grandes problemas, a demais, não conseguimos raspar dados de outros sites devido a grande diferença entre todos eles. Por fim decidimos manter um unico site com uma unica pagina sendo consumida.
+Foram encontradas dificuldades em paginar devido a diferença entre URL e quantidade apresentada; raspar outros sites também foi um impedimento pois não foi apresentado metodos ageis de realizar tal processo. Por fim foi decidido manter um unico site com uma unica pagina sendo consumida.
 
-Após extrair os dados, o grupo decidiu que os dados deveriam ter os seguintes modificações:
+Após extrair os dados, resolvido que os dados deveriam ter os seguintes modificações:
     - O caracter apóstrofo deveria ser retirado dos titulos;
     - As notas deveriam ser numeros quebrados;
     - Alguns generos tinham erro de escrita com "/n", então deveriam ser retirados;
@@ -82,9 +84,9 @@ Após extrair os dados, o grupo decidiu que os dados deveriam ter os seguintes m
     - Deveriam ser mantidos somente o ano de lançamento, ignorando o ano em que a serie encerou.
         Exemplo: (2007-2012) -> 2007
 
-Novamente como um grupo nos estudamos as posssibilidades de onde e como armazenar os dados raspados, chegamos a conclusão de que a melhor ideia seria um banco de daos não relacional, pois não dividiarmos em tantos "pedaços" estes dados. O CouchDB nos foi indicado por alunos mais experientes da mesma faculdade. Para utilizar o banco de dados, só precisaria ter o login e senha declarados no codigo em Python.
+Foram estudadas as possibilidades de local e como efetuar o armazenamento os dados raspados, chegamos a conclusão de que a melhor ideia seria um banco de daos não relacional, pois não dividiarmos em tantos "pedaços" estes dados. O CouchDB nos foi indicado por alunos mais experientes da mesma faculdade. Para utilizar o banco de dados, só precisaria ter o login e senha declarados no codigo em Python.
 
-- Como logar no CouchDB:
+- Como autenticar no CouchDB:
 
 ![login couchdb](https://user-images.githubusercontent.com/55815856/141023643-b801c2e9-99aa-4a64-a266-1d41c992f9ba.PNG)
 
@@ -99,11 +101,11 @@ Novamente como um grupo nos estudamos as posssibilidades de onde e como armazena
 
 - METODOLOGIA ÁGIL: validar a ideia do mínimo produto viável e sempre manter contato com o cliente em todas as sprints, determinando pequenas tarefas distribuídas para um grupo de pessoas conforme a necessidade e facilidade de cada integrante.
 
-- PYTHON: pouco me foi introduzido sobre tal linguagem e reparei que não é tão verbosa quanto supus que seria. Por ser uma linguagem mais simplificada, não tive tantas dificuldades de entende-la.
+- PYTHON: pouco me foi introduzido sobre tal linguagem e reparei que não é tão verbosa quanto presumi que seria. Por ser uma linguagem mais simplificada, não tive tantas dificuldades de entende-la.
 
     -RASPAGEM DE DADOS: a parte de raspar os dados foi muito interessante e divertida de realizar, a biblioteca Beautiful Soup é bem conhecida e tem vários vídeos de como utilizá-la, me pareceu muito clara na teoria, porém tive um pouco de dificuldade de usá-la por não entender o fluxo do HTML.
     
-    - MANIPULAÇÃO DE DADOS: segui uma tilha bem famosa no YouTube e consegui retirar e trocar todos os caracteres especiais dos dados que coletei do EMDB. A trilha é um pouco extensa, tive que dar umas treinadas, mas realmente ajudou muito. Hoje eu indico fortemente o CURSO EM VIDEO do professor Gustavo Guanabara.
+    - MANIPULAÇÃO DE DADOS: segui uma tilha bem famosa no YouTube e consegui retirar e trocar todos os caracteres especiais dos dados que coletei do IMDB. A trilha é um pouco extensa, tive que dar umas treinadas, mas realmente ajudou muito. Hoje eu indico fortemente o CURSO EM VIDEO do professor Gustavo Guanabara.
     
     - TRANSFORMAR OS DADOS EM JSON: o conceito de criar um modelo (model do projeto) me pareceu abstrato, o que realmente é, mas também é o que estrutura ao dado. Como utilizamos banco de dados não relacional, o Json foi simples.
 
