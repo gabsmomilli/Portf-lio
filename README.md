@@ -3,12 +3,12 @@
 ## Web Bot - HeySeries
 
 ### - Descrição do projeto:
-Desenvolver um web bot que faça uma raspagem de dados em um site, coletando dados referentes a seriados, seus respectivos generos, ano de lançamento e nota, sendo armazenas em um banco de dados, onde as mesmas serão disponibilizadas para o frontend consumir e otimizar a experiência do usuário em indicação de séries por melhores notas ou por seus filtros, usando um de cada vez ou até mesmo todos eles.
+Desenvolver um web bot que faça raspagem de dados em um site, coletando dados referentes a seriados, seus respectivos generos, ano de lançamento e nota, sendo armazenas em um banco de dados, onde as mesmas serão disponibilizadas para o frontend consumir e otimizar a experiência do usuário em indicação de séries por melhores notas ou por seus filtros, usando um de cada vez ou até mesmo todos eles.
 
-### - Proposta comercial:
-O objetivo do projeto é que um grupo de alunos desenvolva uma aplicação em que seja um webbot, usando o na solução de um problema proposto pelo proprio grupo.
+#### - Proposta comercial:
+O objetivo do projeto é que um grupo de alunos desenvolva uma aplicação web bot, utilizando a solução de um problema proposto pelo próprio grupo. A técnica proposta é "raspagem de dados", dado como um processo de operar uma aplicação para extrair dados valiosos de uma fonte, para utilizá-los a seu favor. A raspagem de conteúdos pode ser então "replicada" ou manipulada conforme o necessário.
 
-### - Cliente
+#### - Cliente
 
 CEETEPS - Centro Estadual de Educação Tecnológica Paula Souza
 O Centro Paula Souza administra as Faculdades de Tecnologia (Fatecs) e Escolas Técnicas Estaduais (Etecs) nas cidades do Estado de São Paulo. As Etec atendem mais de 100 mil estudantes nos níveis de ensino Médio e Técnico, para os setores Industrial, Agropecuário e de Serviços, em 78 habilitações. Nas Fatecs, mais de 20 mil alunos estão distribuídos em vários cursos Superiores de Graduação.
