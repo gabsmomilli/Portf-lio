@@ -132,7 +132,7 @@ Novamente como um grupo nos estudamos as posssibilidades de onde e como armazena
 
 
 ## Aprendizados efetivos
-- SCRUM: com o desenvolver deste projeto pude conhecer o scrum e como ele funciona. O papel de cada um e como a comunicação pode ser falha. Se um errar, todos falham. Ser uma pessoa mais ativa e procurar como desenvolve determinada tarefa. E como ajudar um colega. 
+- SCRUM: com o desenvolver deste projeto pude conhecer o scrum e como ele funciona. O papel de cada um e como a comunicação pode ser falha. Cada etapa ou avanço deve ser inspecionado, de modo a identificar se são necessárias possíveis mudanças ou adaptações. Se no sprint anterior forem identificadas necessidades de mudanças é crucial que a equipe Scrum esteja preparado e capacitado para realiza-las. Realizar reuniões para manter a comunicação entre os indiciduos e reportar o andamentos das taks, dificuldades e ou ideias.
 
 - METODOLOGIA ÁGIL: validar a ideia do mínimo produto viável e sempre manter contato com o cliente em todas as sprints, determinando pequenas tarefas distribuídas para um grupo de pessoas conforme a necessidade e facilidade de cada integrante.
 
