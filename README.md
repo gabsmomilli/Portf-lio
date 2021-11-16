@@ -16,8 +16,17 @@ A ideia foi a de desenvolver uma aplicação web bot que faria raspagem de dados
 
 No desenvolver do projeto, foi validado com o cliente o que seria o MÍNIMO PRODUTO VIÁVEL, sendo determinado como uma raspagem simples de um único site de séries, junto de seus respectivos dados. Mostrando apenas as 10 melhores series com maiores notas.
 
-Para o desenvolviento da aplicação o grupo se subdividiu para organizar as tarefas. Inicialmente seria um time back-end e outro front-end.
-- BACK: procuraram cursos gratuitos que ensinassem como raspar dados de um site utilizando python. A organização deste time foi quase nula, já que os dois membros basicamente procuraram as respostas separdamente, assim tomando o dobro de tempo por falta de comunição. Por fim, um destes alunos conseguiu exito nesta tarefa e conseguiu "colher" alguns dados como "teste"
+Para o desenvolvimento da aplicação o grupo se subdividiu para organizar as tarefas. Inicialmente seria um equipe back-end e outro front-end.
+- BACK: 
+    - RASPAGEM DE DADOS: procuraram cursos gratuitos que ensinassem como raspar dados de um site utilizando Python. A organização deste time foi confusa, já que os dois membros basicamente procuraram as respostas separadamente, assim tomando o dobro de tempo por falta de comunicação. Por fim, um destes alunos conseguiu exito na tarefa e trazendo alguns dados como "teste". Um ajudou o outro após aprender como funcionava tal processo.
+    - MANIPULAÇÃO DOS DADOS: alguns destes dados vieram de forma distinta, então a manipulação foi necessária. A atividade foi constituída na retirada de alguns caracteres especiais no nome do filme, gênero e data.
+    - INSERÇÃO NO BANCO DE DADOS: este tópico exigiu um foque maior, pois os membros do grupo não sabiam como os bancos funcionavam e como escolher um que fosse adequado para armazenar dados de um determinado tipo. Com ajuda de nossos masters e outros colegas mais experientes, foi decidido pelo grupo que o ideal seria um banco de dados não reacional, pois seria armazenado em formato de Json e não em tabelas e colunas como no relacional.
+    - MANDAR DADOS DO BANCO PARA O  FRONT: neste ponto nosso front já estava funcionando, mas ainda não consumia dados do banco,  eram dados mocados no próprio HTML. Novamente alguns colegas mais experientes nos deram algumas ideias de quais frameworks podíamos utilizar. Acabou que decidimos utilizar a micro-framework Flask devido o acesso que um dos alunos tinham em uma plataforma de cursos voltados para área da tecnologia.
+ - FRONT:
+    - HTML e CSS: os alunos designados para a execução do front-end, começaram a desenvolver a interface gráfica com HTML e CSS, e logo tiveram grandes resultados de como ficaria nosso projeto em vista do usuário. A área de interação era simples, com uma logo que nos mesmos desenvolvemos no Canvas e transformamos em PNG, uma breve descrição sobre o projeto e, porque o desenvolvemos, e a listagem das 10 series mocadas no próprio HTML.
+    - PUXAR DADOS DO BANCO: além da framework que o grupo de back decidiu utilizar, a equipe de front precisaria de JavaScript para manipular os dados como o manuseio de filtros e busca. Este foi um dos processos mais demorados e trabalhosos da equipe, em vista o grau de dificuldade.
+
+Por fim o projeto teve algumas dificuldades, perca de alguns colegas desistentes do curso, porém, em geral, o grupo foi o melhor e único a tirar 10!
 
 
 ### - Cliente
