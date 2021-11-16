@@ -83,14 +83,16 @@ Foi introduzido a linguagem Python e nosso meio academico, logo o grupo entrou e
   Linguagem de programação que permite a criação de conteúdos que se atualizam dinamicamente,  controla multimídias, imagens animadas, pesquisas por filtros, entre outros.
 
 ### Contribuições individuais 
-A primeira parte do projeto foi coletar os dados de um site que daria notas as series, junto a algumas outras informações importantes para o grupo. O grupo Vitiriosos não fazia ideia de como realizar este processo, logo nos divimos em 2 grupos, sendo eles: front e back. Eu e mais um rapaz ficamos buscando na meios de como coletar dados de outro site individualmente, pois a ideia original era coletar dados de 3 sites a fim de tirar uma media da nota entre eles.
-Por fim eu fui a primeira a conseguir raspar os dados do site OMELETE (https://www.imdb.com/search/title/?title_type=tv_series&release_date=1980-01-01,2019-12-31&user_rating=,'
-    '10.0&count=250), porém encontramos dificuldades em paginar, já que seriam muitas paginas este processo, entretanto entramos em consenço com nossos professores de que não teria grandes problemas, a demais, não conseguimos raspar dados de outros sites devido a grande diferença entre todos eles. Por fim decidimos manter um unico site com uma unica pagina sendo raspada de fato. Esta parte foi desenvolvida por mim, assim como a injeção dos mesmos em um banco de dados.
-    Novamente como um grupo nos estudamos as posssibilidades de onde e como armazenar os dados raspados, chegamos a conclusão de que a melhor ideia seria um banco de daos não relacional, pois não quebrariamos em tantos pedaços estes dados. O CouchDB nos foi indicado por alunos mais experientes da mesma faculdade. Não tive grandes dificuldades em utilizar o banco de dados, só precisaria ter o login e senha declarados no codigo em Python, e astabela e as respectivas colunas que guardariam os dados coletados.
+A primeira parte do projeto foi coletar os dados de um site que da notas pras melhores series, junto a algumas outras informações importantes para o grupo. O grupo não sabia como realizar este processo, logo nos divimos em 2 grupos, sendo eles: front e back. Eu e mais um rapaz ficamos buscando meios de como coletar dados de sites diferentes individualmente, pois a ideia original era coletar dados de 3 sites a fim de tirar uma media da nota entre eles.
+
+Por fim eu fui a primeira a conseguir raspar os dados do site IMDB : https://www.imdb.com/search/title/?title_type=tv_series&release_date=1980-01-01,2019-12-31&user_rating=,%27%2710.0&count=250
+
 
 - Puxando site Omelete:
 
 ![gfhadgfadgaidaygafgoaehgouaehg](https://user-images.githubusercontent.com/55815856/141889016-3b3472d9-ccda-4ad0-ba75-1c31019e81ac.PNG)
+
+E logo comecei a selecionar os dados mais relavantes para nossa API:
 
 - Coleta de dados expecificos:
 
@@ -98,12 +100,17 @@ Por fim eu fui a primeira a conseguir raspar os dados do site OMELETE (https://w
 
 ![puxando dados necessarios](https://user-images.githubusercontent.com/55815856/141889757-f9f27295-51e1-454f-a92d-f112f4c435f9.PNG)
 
-- Armazenamento no banco de dados:
+Encontramos dificuldades em paginar, já que seriam muitas paginas este processo, entretanto entramos em consenço com nossos professores de que não teria grandes problemas, a demais, não conseguimos raspar dados de outros sites devido a grande diferença entre todos eles. Por fim decidimos manter um unico site com uma unica pagina sendo consumida.
+
+Esta parte foi desenvolvida por mim, assim como a injeção dos mesmos em um banco de dados. Novamente como um grupo nos estudamos as posssibilidades de onde e como armazenar os dados raspados, chegamos a conclusão de que a melhor ideia seria um banco de daos não relacional, pois não dividiarmos em tantos pedaços estes dados. O CouchDB nos foi indicado por alunos mais experientes da mesma faculdade. Não tive grandes dificuldades em utilizar o banco de dados, só precisaria ter o login e senha declarados no codigo em Python, e astabela e as respectivas colunas que guardariam os dados coletados.
 
 
 - Como logar no CouchDB:
 
 ![login couchdb](https://user-images.githubusercontent.com/55815856/141023643-b801c2e9-99aa-4a64-a266-1d41c992f9ba.PNG)
+
+
+- Armazenamento no banco de dados:
 
 
 ### Aprendizados efetivos
