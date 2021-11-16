@@ -144,13 +144,6 @@ Novamente como um grupo nos estudamos as posssibilidades de onde e como armazena
     
     - TRANSFORMAR OS DADOS EM JSON: o conceito de criar um modelo (model do projeto) me pareceu abstrato, o que realmente é, mas também é o que estrutura ao dado. Como utilizamos banco de dados não relacional, o Json foi simples.
 
-Ao relatar todo o projeto pode aparentar que todo o projeto foi facil e sem grandes dificuldades devido a grande quantidade de vezes que as atividades foram relatadas como "simples" e "clara", mas na veracidade enfrentamos como equipe varios empedimentos, como:
-    - Alguns integrantes do grupo deixaram o curso, fazendo com que mais atividades fossem atribuidas a cada integrante;
-    - Discuçoes na equipe por falta de compromisso com o projeto;
-    - Dificuldade de se expressar com os outros integrantes;
-    - Organizar tarefas;
-    - Autonomia;
-
 
 
 
