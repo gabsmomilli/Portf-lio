@@ -32,10 +32,10 @@ O Curso de Tecnologia
 De uma forma geral a formação do Tecnólogo, além de aspectos técnicos, envolve também, uma base de caráter social, ético, filosófico e ambiental que faz deste cidadão um profissional ciente de sua inserção e responsabilidades no meio social que integra. Esta bagagem técnica e sócio-ambiental adquirida implicará em um tecnólogo que realiza suas atribuições seguindo sempre normas de segurança, higiene e proteção ao meio-ambiente. Inclui, também, aspectos de empreendedorismo que possibilita sua dedicação a direção e gerenciamento do seu próprio negócio, prestação de serviços de assessoria, ao ensino e a pesquisa tecnológica dentro de seu campo profissional.
 
 ### - Features
-Raspagem dos dados
-Armazenar os dados coletados 
-Visualização gráfica de informações
-Filtros para melhor aplicação dos dados
+- Raspagem dos dados
+- Armazenar os dados coletados 
+- Visualização gráfica de informações
+- Filtros para melhor aplicação dos dados
 
 ### - Requisitos
 #### Funcionais
