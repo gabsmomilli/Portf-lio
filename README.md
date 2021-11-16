@@ -26,7 +26,7 @@ Para o desenvolvimento da aplicação o grupo se subdividiu para organizar as ta
     
  - FRONT-END:
     - HTML e CSS: os alunos designados para a execução do front-end, começaram a desenvolver a interface gráfica com HTML e CSS, e logo tiveram grandes resultados de como ficaria o projeto em vista do usuário. A área de interação era simples, com uma logo desenvolvida no Canvas e transformada em PNG, uma breve descrição sobre o projeto e, porque foi desenvolvido, e a listagem das 10 series no próprio HTML.
-    - PUXAR DADOS DO BANCO: além da framework que o grupo de back decidiu utilizar, a equipe de front precisaria de JavaScript para manipular os dados como o manuseio de filtros e busca. Este foi um dos processos mais demorados e trabalhosos da equipe, em vista o grau de dificuldade.
+    - PUXAR DADOS DO BANCO: além da framework que o grupo de back-end decidiu utilizar, a equipe de front-end precisaria de JavaScript para manipular os dados como o manuseio de filtros e busca. Este foi um dos processos mais demorados e trabalhosos da equipe, em vista o grau de dificuldade.
 
 Por fim o projeto teve algumas dificuldades, perca de alguns colegas desistentes do curso, porém, em geral, o grupo foi o melhor e único a tirar 10!
 
