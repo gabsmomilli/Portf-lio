@@ -31,7 +31,7 @@ Para o desenvolvimento da aplicação o grupo se subdividiu para organizar as ta
 Por fim o projeto teve algumas dificuldades, perca de alguns colegas desistentes do curso, porém, em geral, o grupo foi o melhor e único a tirar 10!
 
 
-### - Cliente
+## - Cliente
 
 CEETEPS - Centro Estadual de Educação Tecnológica Paula Souza
 O Centro Paula Souza administra as Faculdades de Tecnologia (Fatecs) e Escolas Técnicas Estaduais (Etecs) nas cidades do Estado de São Paulo. As Etec atendem mais de 100 mil estudantes nos níveis de ensino Médio e Técnico, para os setores Industrial, Agropecuário e de Serviços, em 78 habilitações. Nas Fatecs, mais de 20 mil alunos estão distribuídos em vários cursos Superiores de Graduação.
@@ -42,14 +42,14 @@ A Faculdade de Tecnologia de São José dos Campos foi criada no dia 2 de março
 O Curso de Tecnologia
 De uma forma geral a formação do Tecnólogo, além de aspectos técnicos, envolve também, uma base de caráter social, ético, filosófico e ambiental que faz deste cidadão um profissional ciente de sua inserção e responsabilidades no meio social que integra. Esta bagagem técnica e sócio-ambiental adquirida implicará em um tecnólogo que realiza suas atribuições seguindo sempre normas de segurança, higiene e proteção ao meio-ambiente. Inclui, também, aspectos de empreendedorismo que possibilita sua dedicação a direção e gerenciamento do seu próprio negócio, prestação de serviços de assessoria, ao ensino e a pesquisa tecnológica dentro de seu campo profissional.
 
-### - Features
+## - Features
 - Raspagem dos dados
 - Armazenar os dados coletados 
 - Visualização gráfica de informações
 - Filtros para melhor aplicação dos dados
 
-### - Requisitos
-#### Funcionais
+## - Requisitos
+### Funcionais
 
 | Requisitos Funcionais                                                  | Código | Prioridade | Sprint |
 |------------------------------------------------------------------------|--------|------------|--------|
@@ -60,14 +60,14 @@ De uma forma geral a formação do Tecnólogo, além de aspectos técnicos, envo
 
 
 
-#### Não funcionais
+### Não funcionais
 
 | Requisitos Não Funcionais                            | Código | 
 |------------------------------------------------------|--------|
 | Seguir os conceitos da metodologia ágil	         | RNF01  |
 | Scrum                  | RNF02  |
 
-### - Tecnologias 
+## - Tecnologias 
 Foi introduzido a linguagem Python e nosso meio academico, logo o grupo entrou em consenço para utilizá-la. Como todo o grupo destinguia de conhecimentos sobre desenvolvimento e nomenclaturas como "raspagem de dados", ocorreu um pouco de dificuldade na comunicação entre eles e com os professores. Por fim realizaram a raspagem de dados com sucesso, porém sem armazená-los em algum lugar. Devido a baixa granularidade dos dados, resolveram optar por um banco de dados não relacional, armazenariam o nome da serie, genero, data de lançamento e nota em formato de Json; sendo ele o CouchDB. Para fazer esta "ponte" entre os dados e a interface grafica, foi utilizada a framework Flask. E por fim, o frontend foi desenvolvido utilizando HTML, CSS e Javascript para interface e a manipulação dos dados, que no caso seria a filtragem dos dados mostardos.
 
 - Python:
@@ -82,7 +82,7 @@ Foi introduzido a linguagem Python e nosso meio academico, logo o grupo entrou e
 - Javacript
   Linguagem de programação que permite a criação de conteúdos que se atualizam dinamicamente,  controla multimídias, imagens animadas, pesquisas por filtros, entre outros.
 
-### Contribuições individuais 
+## Contribuições individuais 
 A primeira parte do projeto foi coletar os dados de um site que da notas pras melhores series, junto a algumas outras informações importantes para o grupo. O grupo não sabia como realizar este processo, logo nos divimos em 2 grupos, sendo eles: front e back. Eu e mais um rapaz ficamos buscando meios de como coletar dados de sites diferentes individualmente, pois a ideia original era coletar dados de 3 sites a fim de tirar uma media da nota entre eles.
 
 Por fim eu fui a primeira a conseguir raspar os dados do site IMDB : https://www.imdb.com/search/title/?title_type=tv_series&release_date=1980-01-01,2019-12-31&user_rating=,%27%2710.0&count=250
@@ -113,7 +113,7 @@ Esta parte foi desenvolvida por mim, assim como a injeção dos mesmos em um ban
 - Armazenamento no banco de dados:
 
 
-### Aprendizados efetivos
+## Aprendizados efetivos
 
 
 
