@@ -102,9 +102,13 @@ E logo comecei a selecionar os dados mais relavantes para nossa API consumir:
 
 - Coleta de dados expecificos:
 
-![image](https://user-images.githubusercontent.com/55815856/141889579-7efcc2a8-58ef-470e-9838-3af923fbce9c.png)
-
-![puxando dados necessarios](https://user-images.githubusercontent.com/55815856/141889757-f9f27295-51e1-454f-a92d-f112f4c435f9.PNG)
+        - Visualização atraves do browser: 
+        Botão direito do mouse -> Inspecionar -> Elementos
+        ![image](https://user-images.githubusercontent.com/55815856/141889579-7efcc2a8-58ef-470e-9838-3af923fbce9c.png)
+ 
+        - Como estes dados são "capturados" pelo pacote Beautiful Soup:
+        - Utilizando a visualização fornecida pelo browser, pode-se ver o caminho para submeter tal dado.
+        ![puxando dados necessarios](https://user-images.githubusercontent.com/55815856/141889757-f9f27295-51e1-454f-a92d-f112f4c435f9.PNG)
 
 Encontramos dificuldades em paginar, já que seriam muitas paginas este processo, entretanto entramos em consenço com nossos professores de que não teria grandes problemas, a demais, não conseguimos raspar dados de outros sites devido a grande diferença entre todos eles. Por fim decidimos manter um unico site com uma unica pagina sendo consumida.
 
