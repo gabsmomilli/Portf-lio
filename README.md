@@ -65,11 +65,13 @@ Por fim eu fui a primeira a conseguir raspar os dados do site OMELETE (https://w
     '10.0&count=250), porém encontramos dificuldades em paginar, já que seriam muitas paginas este processo, entretanto entramos em consenço com nossos professores de que não teria grandes problemas, a demais, não conseguimos raspar dados de outros sites devido a grande diferença entre todos eles. Por fim decidimos manter um unico site com uma unica pagina sendo raspada de fato. Esta parte foi desenvolvida por mim, assim como a injeção dos mesmos em um banco de dados.
     Novamente como um grupo nos estudamos as posssibilidades de onde e como armazenar os dados raspados, chegamos a conclusão de que a melhor ideia seria um banco de daos não relacional, pois não quebrariamos em tantos pedaços estes dados. O CouchDB nos foi indicado por alunos mais experientes da mesma faculdade. Não tive grandes dificuldades em utilizar o banco de dados, só precisaria ter o login e senha declarados no codigo em Python, e astabela e as respectivas colunas que guardariam os dados coletados.
 
-- Como logar no CouchDB
-![login couchdb](https://user-images.githubusercontent.com/55815856/141023643-b801c2e9-99aa-4a64-a266-1d41c992f9ba.PNG)
 
 - Coleta de dados
 - Armazenamento no banco de dados
+- Como logar no CouchDB:
+
+![login couchdb](https://user-images.githubusercontent.com/55815856/141023643-b801c2e9-99aa-4a64-a266-1d41c992f9ba.PNG)
+
 
 ### Aprendizados efetivos
 
