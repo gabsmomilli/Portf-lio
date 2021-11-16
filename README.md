@@ -8,20 +8,22 @@ A proposta do projeto é a de que um grupo de alunos desenvolva uma aplicação 
 
 Um prazo para entrega foi estipulado e chamado de "sprint", logo introduzido a metodologia ágil e o scrum. “Masters” foram designados para cada grupos, e os mesmos seriam alunos mais experientes do ultimo semestre do curso de banco de dados, seus objetivos eram de gerenciar e solucionar impedimentos que o grupo enfrentasse. Foi determinado o uso do gitlab durante cada sprint.
 
-Pensamos em resolver o seguinte problema: indicação de séries com boas notas de avaliação pelo público.
+Ideia do grupo: indicação de séries com boas notas de avaliação pelo público.
 
-Logo escolhemos o nome HeySeries, fazendo referência inteligencia artificial da Apple "Siri".
+Logo escolheram o nome HeySeries, fazendo referência inteligencia artificial da Apple "Siri".
 
-A ideia foi a de desenvolver uma aplicação web bot que faria raspagem de dados em um site, coletando dados referentes a seriados, seus respectivos gêneros, ano de lançamento e nota, sendo armazenados em um banco de dados, onde os mesmos serão disponibilizados para o front-end otimizar a experiência do usuário ao buscar por séries com melhores notas.
+A ideia foi a de desenvolver uma aplicação web bot que faria raspagem de dados em um site, coletando dados referentes a seriados, seus respectivos gêneros, ano de lançamento e nota, sendo armazenados em um banco de dados, onde os mesmos serão disponibilizados para o front-end consumir e otimizar a experiência do usuário ao buscar por séries com melhores notas.
 
 No desenvolver do projeto, foi validado com o cliente o que seria o MÍNIMO PRODUTO VIÁVEL, sendo determinado como uma raspagem simples de um único site de séries, junto de seus respectivos dados. Mostrando apenas as 10 melhores series com maiores notas.
 
-Para o desenvolvimento da aplicação o grupo se subdividiu para organizar as tarefas. Inicialmente seria um equipe back-end e outro front-end.
+Para o desenvolvimento da aplicação o grupo se subdividiu para organizar as tarefas. Inicialmente seria uma equipe back-end e outra de front-end.
+
 - BACK: 
     - RASPAGEM DE DADOS: procuraram cursos gratuitos que ensinassem como raspar dados de um site utilizando Python. A organização deste time foi confusa, já que os dois membros basicamente procuraram as respostas separadamente, assim tomando o dobro de tempo por falta de comunicação. Por fim, um destes alunos conseguiu exito na tarefa e trazendo alguns dados como "teste". Um ajudou o outro após aprender como funcionava tal processo.
-    - MANIPULAÇÃO DOS DADOS: alguns destes dados vieram de forma distinta, então a manipulação foi necessária. A atividade foi constituída na retirada de alguns caracteres especiais no nome do filme, gênero e data.
-    - INSERÇÃO NO BANCO DE DADOS: este tópico exigiu um foque maior, pois os membros do grupo não sabiam como os bancos funcionavam e como escolher um que fosse adequado para armazenar dados de um determinado tipo. Com ajuda de nossos masters e outros colegas mais experientes, foi decidido pelo grupo que o ideal seria um banco de dados não relacional, pois seria armazenado em formato de Json e não em tabelas e colunas como no relacional.
-    - MANDAR DADOS DO BANCO PARA O  FRONT: neste ponto nosso front já estava funcionando, mas ainda não consumia dados do banco, eram dados locais no próprio HTML. Novamente alguns colegas mais experientes nos deram algumas ideias de quais frameworks podíamos utilizar. Foi decidido utilizar a micro-framework Flask devido o acesso que um dos alunos tinham em uma plataforma de cursos voltados para área da tecnologia.
+    - MANIPULAÇÃO DOS DADOS: alguns destes dados vieram de forma distinta, então a manipulação foi necessária. A atividade foi constituída na retirada de alguns caracteres especiais no nome do filme, gênero e data de lançamento.
+    - INSERÇÃO NO BANCO DE DADOS: este tópico exigiu uma ateção maior, pois os membros do grupo não sabiam como os bancos funcionavam e como escolher um que fosse adequado para armazenar dados de um determinado tipo. Com ajuda dos masters e outros colegas mais experientes, foi decidido pelo grupo que o ideal seria um banco de dados não relacional, pois seria armazenado em formato de Json e não em tabelas e colunas como no relacional.
+    - MANDAR DADOS DO BANCO PARA O  FRONT: neste ponto o front já estava funcionando, mas ainda não consumia dados do banco, eram dados locais no próprio HTML. Novamente alguns colegas mais experientes deram algumas ideias de quais frameworks poderiam utilizar, logo a micro-framework Flask foi escolhida devido o acesso que um dos alunos tinham em uma plataforma de cursos voltados para área da tecnologia.
+    
  - FRONT:
     - HTML e CSS: os alunos designados para a execução do front-end, começaram a desenvolver a interface gráfica com HTML e CSS, e logo tiveram grandes resultados de como ficaria o projeto em vista do usuário. A área de interação era simples, com uma logo desenvolvida no Canvas e transformada em PNG, uma breve descrição sobre o projeto e, porque foi desenvolvido, e a listagem das 10 series no próprio HTML.
     - PUXAR DADOS DO BANCO: além da framework que o grupo de back decidiu utilizar, a equipe de front precisaria de JavaScript para manipular os dados como o manuseio de filtros e busca. Este foi um dos processos mais demorados e trabalhosos da equipe, em vista o grau de dificuldade.
@@ -66,7 +68,7 @@ De uma forma geral a formação do Tecnólogo, além de aspectos técnicos, envo
 | Scrum                  | RNF02  |
 
 ### - Tecnologias 
-Foi introduzido a linguagem Python e nosso meio academico, logo o grupo entrou em consenço para utilizá-la. Como todo o grupo Vitoriosos destinguia de conhecimentos sobre desenvolvimento e nomenclaturas como "raspagem de dados", ocorreu um pouco de dificuldade na comunicação com os professores. Por fim realizamos a raspagem de dados com sucesso, porém precisavamos armazená-los em algum lugar, no caso um banco de dados. Devido a baixa granularidade dos dados, resolvemos optar por um banco de dados não relacional, onde uma unica tabela armazenaria o nome da serie, genero, data de lançamento e nota; sendo ele o CouchDB. Para fazer esta "ponte" entre os dados e a interface grafica, foi utilizada a framework Flask. E por sim, nosso frontend foi desenvolvido utilizando HTML, CSS e Javascript para interface e a manipulação dos dados, que no caso seria a filtragem dos dados mostardos.
+Foi introduzido a linguagem Python e nosso meio academico, logo o grupo entrou em consenço para utilizá-la. Como todo o grupo destinguia de conhecimentos sobre desenvolvimento e nomenclaturas como "raspagem de dados", ocorreu um pouco de dificuldade na comunicação entre eles e com os professores. Por fim realizaram a raspagem de dados com sucesso, porém sem armazená-los em algum lugar. Devido a baixa granularidade dos dados, resolveram optar por um banco de dados não relacional, armazenariam o nome da serie, genero, data de lançamento e nota em formato de Json; sendo ele o CouchDB. Para fazer esta "ponte" entre os dados e a interface grafica, foi utilizada a framework Flask. E por fim, o frontend foi desenvolvido utilizando HTML, CSS e Javascript para interface e a manipulação dos dados, que no caso seria a filtragem dos dados mostardos.
 
 - Python:
   Linguagem de programação, desenvolvida para ser simples, fácil de aprender e versátil, logo, para ser utilizá-la em diversas atividades. Sendo ótima para ser a 1° linguagem de se aprender, também é uma das mais utilizadas no mundo e valorizada por poder ser  utilizada em diversas áreas, pode se diferenciar de outras linguagens.
