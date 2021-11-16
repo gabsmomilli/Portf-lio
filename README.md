@@ -3,12 +3,18 @@
 ## Web Bot - HeySeries
 
 ### - Descrição do projeto:
-Desenvolver um web bot que faça raspagem de dados em um site, coletando dados referentes a seriados, seus respectivos generos, ano de lançamento e nota, sendo armazenas em um banco de dados, onde as mesmas serão disponibilizadas para o frontend consumir e otimizar a experiência do usuário em indicação de séries por melhores notas ou por seus filtros, usando um de cada vez ou até mesmo todos eles.
 
-#### - Proposta comercial:
-O objetivo do projeto é que um grupo de alunos desenvolva uma aplicação web bot, utilizando a solução de um problema proposto pelo próprio grupo. A técnica proposta é "raspagem de dados", dado como um processo de operar uma aplicação para extrair dados valiosos de uma fonte, para utilizá-los a seu favor. A raspagem de conteúdos pode ser então "replicada" ou manipulada conforme o necessário.
+O Projeto Integrador HeySeries tem como objetivo estimular o desenvolvimentos dos alunos do 1° semestre de Banco de Dados da FATEC de São José dos Campos. Sendo proposto um desafio ao contrario, onde os professores derão a solução para os respectivos grupos determinarem qual problema desejam resolver. 
 
-#### - Cliente
+A proposta do projeto é que um grupo de alunos desenvolva uma aplicação web bot, utilizando a solução de um problema proposto pelo próprio grupo. A técnica proposta é "raspagem de dados", dado como um processo de operar uma aplicação para extrair dados valiosos de uma fonte, para utilizá-los a seu favor. A raspagem de conteúdos pode ser então "replicada" ou manipulada conforme o necessário.
+
+Cada grupo precisava ter um nome, e um deles decidiu se chamar de Vitoriosos. Não eram vitoriosos de vitoria, mas sim porque um colega se chamava Vitor e outra se chamava Vitoria..
+
+Este grupo pensou em resolver um problema simples que eles mesmos utilizariam se necessario, logo procuraram interesses em comum para ser uma solução em comum entre eles. Todos gostavam de assistir series e então surgiu a ideia. O nome veio logo depois dado referencia a Siri da Apple, o nome dado foi HeySeries.
+
+A solução para o problema proposto pela FATEC se tornou então o desenvolver de uma aplicação web bot que faça raspagem de dados em um site, coletando dados referentes a seriados, seus respectivos gêneros, ano de lançamento e nota, sendo armazenas em um banco de dados, onde as mesmas serão disponibilizadas para o front-end consumir e otimizar a experiência do usuário em indicação de séries por melhores notas ou por seus filtros, usando um de cada vez ou até mesmo todos eles.
+
+### - Cliente
 
 CEETEPS - Centro Estadual de Educação Tecnológica Paula Souza
 O Centro Paula Souza administra as Faculdades de Tecnologia (Fatecs) e Escolas Técnicas Estaduais (Etecs) nas cidades do Estado de São Paulo. As Etec atendem mais de 100 mil estudantes nos níveis de ensino Médio e Técnico, para os setores Industrial, Agropecuário e de Serviços, em 78 habilitações. Nas Fatecs, mais de 20 mil alunos estão distribuídos em vários cursos Superiores de Graduação.
