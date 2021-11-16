@@ -47,20 +47,31 @@ Filtros para melhor aplicação dos dados
 ### - Tecnologias 
 Foi introduzido a linguagem Python e nosso meio academico, logo o grupo entrou em consenço para utilizá-la. Como todo o grupo Vitoriosos destinguia de conhecimentos sobre desenvolvimento e nomenclaturas como "raspagem de dados", ocorreu um pouco de dificuldade na comunicação com os professores. Por fim realizamos a raspagem de dados com sucesso, porém precisavamos armazená-los em algum lugar, no caso um banco de dados. Devido a baixa granularidade dos dados, resolvemos optar por um banco de dados não relacional, onde uma unica tabela armazenaria o nome da serie, genero, data de lançamento e nota; sendo ele o CouchDB. Para fazer esta "ponte" entre os dados e a interface grafica, foi utilizada a framework Flask. E por sim, nosso frontend foi desenvolvido utilizando HTML, CSS e Javascript para interface e a manipulação dos dados, que no caso seria a filtragem dos dados mostardos.
 
-- Python
-- Flask
+- Python:
+  Linguagem de programação, desenvolvida para ser simples, fácil de aprender e versátil, logo, para ser utilizá-la em diversas atividades. Sendo ótima para ser a 1° linguagem de se aprender, também é uma das mais utilizadas no mundo e valorizada por poder ser  utilizada em diversas áreas, pode se diferenciar de outras linguagens.
+  
+- Flask:
+  Micro-framework multiplataforma escrito em Python para gerenciamento no mesmo e disponível em código aberto, oferece um modelo simples para desenvolvimento web. Neste caso lançando as informações do banco de dados até o front-end.
+  
 - CouchDB
+  Banco de dados NoSQL orientado a documentos. Utiliza JSON como formato de dados e JavaScript como linguagem de consulta. Diferente da maioria  dos outros bancos de dados, seu conteúdo é acessado e modificado através de uma API REST.
+
 - Javacript
+  Linguagem de programação que permite a criação de conteúdos que se atualizam dinamicamente,  controla multimídias, imagens animadas, pesquisas por filtros, entre outros.
 
 ### Contribuições individuais 
-A primeira parte do projeto foi coletar os dados de um site que daria notas as series, junto a algumas outras informações importantes para o grupo. O grupo Vitiriosos não fazia ideia de como realizar este processo, logo nos divimos em 2 grupos, sendo eles: front e back. Eu e mais um rapaz ficamos buscando na meios de como coletar dados de outro site individualmente, pois a ideia original era coletar dados de 3 sites a fim de tirar uma media da nota entre eles. Por fim eu fui a primeira a conseguir raspar os dados do site OMELETE, porém encontramos dificuldades em paginar, já que seriam muitas paginas este processo, mas entramos em consenço com nossos professores de que não teria grandes problemas, a demais, não conseguimos raspar dados de outros sites devido a grande diferença entre todos eles. Por fim decidimos manter um unico site com uma unica pagina sendo raspada de fato. sta parte foi desenvolvida por mim, assim como a injeção dos mesmos em um banco de dados. Novamente como um grupo nos estudamos as posssibilidades de onde e comoarmazenar os dados raspados, chegamos a conclusão de que a melhor ideia seria um banco de daos não relacional, pois não quebrariamos em tantos pedaços estes dados. O CouchDB nos foi indicado por alunos mais experientes da mesma faculdade. Não tive grandes dificuldades em utilizar o banco de dados, só precisaria ter o login e senha declarados no codigo em Python, e astabela e as respectivas colunas que guardariam os dados coletados.
-
-- Coleta de dados
-- Armazenamento no banco de dados
+A primeira parte do projeto foi coletar os dados de um site que daria notas as series, junto a algumas outras informações importantes para o grupo. O grupo Vitiriosos não fazia ideia de como realizar este processo, logo nos divimos em 2 grupos, sendo eles: front e back. Eu e mais um rapaz ficamos buscando na meios de como coletar dados de outro site individualmente, pois a ideia original era coletar dados de 3 sites a fim de tirar uma media da nota entre eles.
+Por fim eu fui a primeira a conseguir raspar os dados do site OMELETE (https://www.imdb.com/search/title/?title_type=tv_series&release_date=1980-01-01,2019-12-31&user_rating=,'
+    '10.0&count=250), porém encontramos dificuldades em paginar, já que seriam muitas paginas este processo, entretanto entramos em consenço com nossos professores de que não teria grandes problemas, a demais, não conseguimos raspar dados de outros sites devido a grande diferença entre todos eles. Por fim decidimos manter um unico site com uma unica pagina sendo raspada de fato. Esta parte foi desenvolvida por mim, assim como a injeção dos mesmos em um banco de dados.
+    Novamente como um grupo nos estudamos as posssibilidades de onde e como armazenar os dados raspados, chegamos a conclusão de que a melhor ideia seria um banco de daos não relacional, pois não quebrariamos em tantos pedaços estes dados. O CouchDB nos foi indicado por alunos mais experientes da mesma faculdade. Não tive grandes dificuldades em utilizar o banco de dados, só precisaria ter o login e senha declarados no codigo em Python, e astabela e as respectivas colunas que guardariam os dados coletados.
 
 - Como logar no CouchDB
 ![login couchdb](https://user-images.githubusercontent.com/55815856/141023643-b801c2e9-99aa-4a64-a266-1d41c992f9ba.PNG)
 
+- Coleta de dados
+- Armazenamento no banco de dados
+
+### Aprendizados efetivos
 
 
 
