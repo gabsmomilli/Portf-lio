@@ -68,10 +68,13 @@ De uma forma geral a formação do Tecnólogo, além de aspectos técnicos, envo
 | Scrum                  | RNF02  |
 
 ## - Tecnologias 
-Foi introduzido a linguagem Python e nosso meio academico, logo o grupo entrou em consenço para utilizá-la. Como todo o grupo destinguia de conhecimentos sobre desenvolvimento e nomenclaturas como "raspagem de dados", ocorreu um pouco de dificuldade na comunicação entre eles e com os professores. Por fim realizaram a raspagem de dados com sucesso, porém sem armazená-los em algum lugar. Devido a baixa granularidade dos dados, resolveram optar por um banco de dados não relacional, armazenariam o nome da serie, genero, data de lançamento e nota em formato de Json; sendo ele o CouchDB. Para fazer esta "ponte" entre os dados e a interface grafica, foi utilizada a framework Flask. E por fim, o frontend foi desenvolvido utilizando HTML, CSS e Javascript para interface e a manipulação dos dados, que no caso seria a filtragem dos dados mostardos.
+Foi introduzido a linguagem Python e nosso meio academico, logo o grupo entrou em consenço para utilizá-la. Como todo o grupo destinguia de conhecimentos sobre desenvolvimento e nomenclaturas como "raspagem de dados", ocorreu um pouco de dificuldade na comunicação entre eles e com os professores. Por fim realizaram a raspagem de dados com sucesso utilizando um pacote chamado Beautiful Soup, porém sem armazená-los em algum lugar. Devido a baixa granularidade dos dados, resolveram optar por um banco de dados não relacional, armazenariam o nome da serie, genero, data de lançamento e nota em formato de Json; sendo ele o CouchDB. Para fazer esta "ponte" entre os dados e a interface grafica, foi utilizada a framework Flask. E por fim, o frontend foi desenvolvido utilizando HTML, CSS e Javascript para interface e a manipulação dos dados, que no caso seria a filtragem dos dados mostardos.
 
 - Python:
   Linguagem de programação, desenvolvida para ser simples, fácil de aprender e versátil, logo, para ser utilizá-la em diversas atividades. Sendo ótima para ser a 1° linguagem de se aprender, também é uma das mais utilizadas no mundo e valorizada por poder ser  utilizada em diversas áreas, pode se diferenciar de outras linguagens.
+  
+ - Beautiful Soup: 
+    Pacote Python para análise de documentos HTML e XML. Ele cria uma árvore de análise para páginas analisadas que podem ser usadas para extrair dados de HTML, o que é útil para web scraping.
   
 - Flask:
   Micro-framework multiplataforma escrito em Python para gerenciamento no mesmo e disponível em código aberto, oferece um modelo simples para desenvolvimento web. Neste caso lançando as informações do banco de dados até o front-end.
@@ -83,16 +86,19 @@ Foi introduzido a linguagem Python e nosso meio academico, logo o grupo entrou e
   Linguagem de programação que permite a criação de conteúdos que se atualizam dinamicamente,  controla multimídias, imagens animadas, pesquisas por filtros, entre outros.
 
 ## Contribuições individuais 
-A primeira parte do projeto foi coletar os dados de um site que da notas pras melhores series, junto a algumas outras informações importantes para o grupo. O grupo não sabia como realizar este processo, logo nos divimos em 2 grupos, sendo eles: front e back. Eu e mais um rapaz ficamos buscando meios de como coletar dados de sites diferentes individualmente, pois a ideia original era coletar dados de 3 sites a fim de tirar uma media da nota entre eles.
+A primeira parte do projeto foi coletar os dados de um site que da notas pras melhores series, junto a algumas outras informações importantes para o grupo. O grupo não sabia como realizar este processo, logo nos divimos em 2 grupos, sendo eles: front e back. Eu e mais um rapaz ficamos buscando meios de como coletar dados de sites diferentes individualmente.
 
-Por fim eu fui a primeira a conseguir raspar os dados do site IMDB : https://www.imdb.com/search/title/?title_type=tv_series&release_date=1980-01-01,2019-12-31&user_rating=,%27%2710.0&count=250
+Como estava trabalhando com Python, procurei algo compativel para ajudar neste processo. Literalmente procurei "raspagem de dados python" e varios videos apareceram no Google. O pacote Beautiful Soup era o mais citado dentre os links e videos, então decidi tentar implementá-lo.
 
+Por fim, eu fui a primeira a conseguir raspar os dados do site IMDB :
 
-- Puxando site Omelete:
+https://www.imdb.com/search/title/?title_type=tv_series&release_date=1980-01-01,2019-12-31&user_rating=,%27%2710.0&count=250
+
+- Puxando site IMDB:
 
 ![gfhadgfadgaidaygafgoaehgouaehg](https://user-images.githubusercontent.com/55815856/141889016-3b3472d9-ccda-4ad0-ba75-1c31019e81ac.PNG)
 
-E logo comecei a selecionar os dados mais relavantes para nossa API:
+E logo comecei a selecionar os dados mais relavantes para nossa API consumir:
 
 - Coleta de dados expecificos:
 
@@ -110,7 +116,9 @@ Esta parte foi desenvolvida por mim, assim como a injeção dos mesmos em um ban
 ![login couchdb](https://user-images.githubusercontent.com/55815856/141023643-b801c2e9-99aa-4a64-a266-1d41c992f9ba.PNG)
 
 
-- Armazenamento no banco de dados:
+- Json no banco de dados:
+
+![image](https://user-images.githubusercontent.com/55815856/142066587-4ac894e6-36b3-446b-9e38-7b083705c0bc.png)
 
 
 ## Aprendizados efetivos
