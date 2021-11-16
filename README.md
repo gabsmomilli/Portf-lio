@@ -85,12 +85,11 @@ Foi introduzido a linguagem Python e nosso meio academico, logo o grupo entrou e
 - Javacript
   Linguagem de programação que permite a criação de conteúdos que se atualizam dinamicamente,  controla multimídias, imagens animadas, pesquisas por filtros, entre outros.
 
-## Contribuições individuais 
-A primeira parte do projeto foi coletar os dados de um site que da notas pras melhores series, junto a algumas outras informações importantes para o grupo. O grupo não sabia como realizar este processo, logo nos divimos em 2 grupos, sendo eles: front e back. Eu e mais um rapaz ficamos buscando meios de como coletar dados de sites diferentes individualmente.
+## Contribuições individuais
 
-Como estava trabalhando com Python, procurei algo compativel para ajudar neste processo. Literalmente procurei "raspagem de dados python" e varios videos apareceram no Google. O pacote Beautiful Soup era o mais citado dentre os links e videos, então decidi tentar implementá-lo.
+Sendo designada para equipe de back-end, fui responsavel pela primeira parte do projeto, que no caso seria a propria raspagem de dados. Como estava trabalhando com Python, procurei algo compativel para ajudar neste processo. Literalmente procurei "raspagem de dados python" e varios videos apareceram no Google. O pacote Beautiful Soup era o mais citado dentre os links e videos, então decidi tentar implementá-lo.
 
-Por fim, eu fui a primeira a conseguir raspar os dados do site IMDB :
+Por fim consegui raspar os dados do site IMDB :
 
 https://www.imdb.com/search/title/?title_type=tv_series&release_date=1980-01-01,2019-12-31&user_rating=,%27%2710.0&count=250
 
@@ -110,10 +109,17 @@ E logo comecei a selecionar os dados mais relavantes para nossa API consumir:
     Utilizando a visualização fornecida pelo browser, pode-se ver o caminho para submeter tal dado.
     ![puxando dados necessarios](https://user-images.githubusercontent.com/55815856/141889757-f9f27295-51e1-454f-a92d-f112f4c435f9.PNG)
 
-Encontramos dificuldades em paginar, já que seriam muitas paginas este processo, entretanto entramos em consenço com nossos professores de que não teria grandes problemas, a demais, não conseguimos raspar dados de outros sites devido a grande diferença entre todos eles. Por fim decidimos manter um unico site com uma unica pagina sendo consumida.
+Encontrei dificuldades em paginar, já que seriam muitas paginas este processo. Conversei com meus colegas e com alguns professores, diante desta situação entramos em consenço de que não teria grandes problemas, a demais, não conseguimos raspar dados de outros sites devido a grande diferença entre todos eles. Por fim decidimos manter um unico site com uma unica pagina sendo consumida.
 
-Esta parte foi desenvolvida por mim, assim como a injeção dos mesmos em um banco de dados. Novamente como um grupo nos estudamos as posssibilidades de onde e como armazenar os dados raspados, chegamos a conclusão de que a melhor ideia seria um banco de daos não relacional, pois não dividiarmos em tantos pedaços estes dados. O CouchDB nos foi indicado por alunos mais experientes da mesma faculdade. Não tive grandes dificuldades em utilizar o banco de dados, só precisaria ter o login e senha declarados no codigo em Python, e astabela e as respectivas colunas que guardariam os dados coletados.
+Após extrair os dados, o grupo decidiu que os dados deveriam ter os seguintes modificações:
+    - O caracter apóstrofo deveria ser retirado dos titulos;
+    - As notas deveriam ser numeros quebrados;
+    - Alguns generos tinham erro de escrita com "/n", então deveriam ser retirados;
+    - Caracteres como números romados, parêntese aperto e fechado, sinal meia-risca deveriam ser retirados das datas de lançamento;
+    - Deveriam ser mantidos somente o ano de lançamento, ignorando o ano em que a serie encerou.
+        Exemplo: (2007-2012) -> 2007
 
+Novamente como um grupo nos estudamos as posssibilidades de onde e como armazenar os dados raspados, chegamos a conclusão de que a melhor ideia seria um banco de daos não relacional, pois não dividiarmos em tantos "pedaços" estes dados. O CouchDB nos foi indicado por alunos mais experientes da mesma faculdade. Para utilizar o banco de dados, só precisaria ter o login e senha declarados no codigo em Python.
 
 - Como logar no CouchDB:
 
