@@ -132,6 +132,22 @@ Novamente como um grupo nos estudamos as posssibilidades de onde e como armazena
 
 
 ## Aprendizados efetivos
+- SCRUM: com o desenvolver deste projeto pude conhecer o scrum e como ele funciona. O papel de cada um e como a comunicação pode ser falha. Se um errar, todos falham. Ser uma pessoa mais ativa e procurar como desenvolve determinada tarefa. E como ajudar um colega. 
+
+- METODOLOGIA ÁGIL: validar a ideia do mínimo produto viável e sempre manter contato com o cliente em todas as sprints, determinando pequenas tarefas distribuídas para um grupo de pessoas conforme a necessidade e facilidade de cada integrante.
+
+- PYTHON: pouco me foi introduzido sobre tal linguagem e reparei que não é tão verbosa quanto supus que seria. Por ser uma linguagem mais simplificada, não tive tantas dificuldades de entende-la.
+    -RASPAGEM DE DADOS: a parte de raspar os dados foi muito interessante e divertida de realizar, a biblioteca Beautiful Soup é bem conhecida e tem vários vídeos de como utilizá-la, me pareceu muito clara na teoria, porém tive um pouco de dificuldade de usá-la por não entender o fluxo do HTML.
+    - MANIPULAÇÃO DE DADOS: segui uma tilha bem famosa no YouTube e consegui retirar e trocar todos os caracteres especiais dos dados que coletei do EMDB. A trilha é um pouco extensa, tive que dar umas treinadas, mas realmente ajudou muito. Hoje eu indico fortemente o CURSO EM VIDEO do professor Gustavo Guanabara.
+    - TRANSFORMAR OS DADOS EM JSON: o conceito de criar um modelo (model do projeto) me pareceu abstrato, o que realmente é, mas também é o que estrutura ao dado. Como utilizamos banco de dados não relacional, o Json foi simples.
+
+Ao relatar todo o projeto pode aparentar que todo o projeto foi facil e sem grandes dificuldades devido a grande quantidade de vezes que as atividades foram relatadas como "simples" e "clara", mas na veracidade enfrentei varios empedimentos, como:
+    - Alguns integrantes do grupo deixaram o curso, fazendo com que mais atividades fossem atribuidas a cada integrante;
+    - Discuçoes na equipe por falta de compromisso com o projeto;
+    - Dificuldade de se expressar com os outros integrantes;
+    - Organizar tarefas;
+    - Autonomia;
+
 
 
 
