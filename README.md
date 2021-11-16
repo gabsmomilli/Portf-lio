@@ -3,7 +3,7 @@
 ## Web Bot - HeySeries
 
 ### - Descrição do projeto:
-Desenvolver um web bot que faça uma raspagem de dados em um site, coletando dados referentes a seriados, seus respectivos generos, ano de lançamento e nota, sendo armazenas em um banco de dados, onde as mesmas serão disponibilizadas para o frontend consumir e otimizar a experiência do usuário em indicação de séries.
+Desenvolver um web bot que faça uma raspagem de dados em um site, coletando dados referentes a seriados, seus respectivos generos, ano de lançamento e nota, sendo armazenas em um banco de dados, onde as mesmas serão disponibilizadas para o frontend consumir e otimizar a experiência do usuário em indicação de séries por melhores notas ou por seus filtros, usando um de cada vez ou até mesmo todos eles.
 
 ### - Proposta comercial:
 O objetivo do projeto é que um grupo de alunos desenvolva uma aplicação em que seja um webbot, usando o na solução de um problema proposto pelo proprio grupo.
