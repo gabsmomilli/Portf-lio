@@ -1,5 +1,5 @@
 # Web Bot - HeySeries
-
+Como os d
 ## - Descrição do projeto:
 
 O Projeto Integrador HeySeries visa estimular o desenvolvimento dos alunos do 1° semestre de Banco de Dados da FATEC de São José dos Campos. A proposta do projeto é desenvolver um desafio onde os professores deram a solução para que os grupos determinassem o problema. 
@@ -67,11 +67,15 @@ Selecionando dados relevantes para API consumir:
 - Coleta de dados específicos:
 
     - Visualização através do browser: 
+    
     Botão direito do mouse -> Inspecionar -> Elementos
+    
     ![image](https://user-images.githubusercontent.com/55815856/141889579-7efcc2a8-58ef-470e-9838-3af923fbce9c.png)
  
     - Como os dados são "capturados" pelo pacote Beautiful Soup:
+    
     Utilizando a visualização fornecida pelo browser, pode-se ver o caminho para submeter tal dado.
+    
     ![puxando dados necessarios](https://user-images.githubusercontent.com/55815856/141889757-f9f27295-51e1-454f-a92d-f112f4c435f9.PNG)
 
 Foram encontradas dificuldades em paginar devido a diferença entre URL e quantidade apresentada; raspar outros sites também foi um impedimento pois não foi apresentado métodos ágeis de realizar tal processo. Por fim foi decidido manter um único site com uma única pagina sendo consumida.
