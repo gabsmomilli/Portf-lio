@@ -108,11 +108,11 @@ Foram estudadas as possibilidades de local e como efetuar o armazenamento os dad
 
 - PYTHON: Não é necessaria grandes conhecimentossobre tal linguagem para elaborar tal projeto, pois a mesma não é tão verbosa quanto julgam ser. Por ser uma linguagem mais simplificada, há tantas dificuldades de utilizá-la.
 
-    - RASPAGEM DE DADOS: O termo "raspagem de dados" por ser muito tecnico, aparenta ser um exercicio complexo, o que pode ser para individuos iniciantes á programação. Ao realizar a elaboração do mesmo, muitos relatam ser um experimento interessante e divertido, principalmente quando administrado com a famosa biblioteca Beautiful Soup e disposta com varios vídeos de como utilizá-la. Pode ser relatado dificuldades na ultlização caso o desenvolvedor desconheça HTML.
+        - RASPAGEM DE DADOS: O termo "raspagem de dados" por ser muito tecnico, aparenta ser um exercicio complexo, o que pode ser para individuos iniciantes á programação. Ao             realizar a elaboração do mesmo, muitos relatam ser um experimento interessante e divertido, principalmente quando administrado com a famosa biblioteca Beautiful Soup e           disposta com varios vídeos de como utilizá-la. Pode ser relatado dificuldades na ultlização caso o desenvolvedor desconheça HTML.
     
-    - MANIPULAÇÃO DE DADOS: Para realizar a manipulação de dados em Python, basta seguir a documentação do mesmo, contudo, muitos desenvolvedores iniciantes optão por videos. um canal bem famoso por trilhas em Python é o canal Curso em Video do professor Gustavo Guanabara. O curso é extenso, entretanto completo e recheado de atividades para o aluno treinar.
+        - MANIPULAÇÃO DE DADOS: Para realizar a manipulação de dados em Python, basta seguir a documentação do mesmo, contudo, muitos desenvolvedores iniciantes optão por                 videos. um canal bem famoso por trilhas em Python é o canal Curso em Video do professor Gustavo Guanabara. O curso é extenso, entretanto completo e recheado de                   atividades para o aluno treinar.
     
-    - TRANSFORMAR OS DADOS EM JSON: o conceito de criar um modelo (model do projeto) aparenta ser abstrato, o que realmente é, porém é o que estrutura ao dado. Como foi utilizado banco de dados não relacional, o Json foi simples.
+        - TRANSFORMAR OS DADOS EM JSON: o conceito de criar um modelo (model do projeto) aparenta ser abstrato, o que realmente é, porém é o que estrutura ao dado. Como foi               utilizado banco de dados não relacional, o Json foi simples.
 
 
 
