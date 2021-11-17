@@ -77,14 +77,19 @@ Selecionando dados relavantes para API consumir:
 Foram encontradas dificuldades em paginar devido a diferença entre URL e quantidade apresentada; raspar outros sites também foi um impedimento pois não foi apresentado metodos ageis de realizar tal processo. Por fim foi decidido manter um unico site com uma unica pagina sendo consumida.
 
 Após extrair os dados, resolvido que os dados deveriam ter os seguintes modificações:
+
     - O caracter apóstrofo deveria ser retirado dos titulos;
+   
     - As notas deveriam ser numeros quebrados;
+    
     - Alguns generos tinham erro de escrita com "/n", então deveriam ser retirados;
+    
     - Caracteres como números romados, parêntese aperto e fechado, sinal meia-risca deveriam ser retirados das datas de lançamento;
+    
     - Deveriam ser mantidos somente o ano de lançamento, ignorando o ano em que a serie encerou.
         Exemplo: (2007-2012) -> 2007
 
-Foram estudadas as possibilidades de local e como efetuar o armazenamento os dados raspados, chegamos a conclusão de que a melhor ideia seria um banco de daos não relacional, pois não dividiarmos em tantos "pedaços" estes dados. O CouchDB nos foi indicado por alunos mais experientes da mesma faculdade. Para utilizar o banco de dados, só precisaria ter o login e senha declarados no codigo em Python.
+Foram estudadas as possibilidades de local e como efetuar o armazenamento os dados raspados, até que fosse concluida como melhor ideia a utilização de um banco de daos não relacional, pois não havia uma massa de granularidade dentre os dados. O CouchDB foi indicado por alunos mais experientes da mesma faculdade. Para dispor do banco de dados, é necessario declarar o login e senha codigo em Python para autenticação.
 
 - Como autenticar no CouchDB:
 
@@ -97,17 +102,17 @@ Foram estudadas as possibilidades de local e como efetuar o armazenamento os dad
 
 
 ## Aprendizados efetivos
-- SCRUM: com o desenvolver deste projeto pude conhecer o scrum e como ele funciona. O papel de cada um e como a comunicação pode ser falha. Cada etapa ou avanço deve ser inspecionado, de modo a identificar se são necessárias possíveis mudanças ou adaptações. Se no sprint anterior forem identificadas necessidades de mudanças é crucial que a equipe Scrum esteja preparado e capacitado para realiza-las. Realizar reuniões para manter a comunicação entre os indiciduos e reportar o andamentos das taks, dificuldades e ou ideias.
+- SCRUM: com o desenvolver deste projeto é possivel informar-se de como funciona o scrum. O papel de cada individuo da equipe e como a comunicação pode ser falha. Cada etapa ou avanço deve ser inspecionado, de modo a identificar se são necessárias possíveis mudanças ou adaptações. Se no sprint anterior forem identificadas necessidades de mudanças é crucial que a equipe Scrum esteja preparado e capacitado para realiza-las. Realizar reuniões para manter a comunicação entre os individuos e reportar o andamentos das tasks, dificuldades e ou ideias.
 
-- METODOLOGIA ÁGIL: validar a ideia do mínimo produto viável e sempre manter contato com o cliente em todas as sprints, determinando pequenas tarefas distribuídas para um grupo de pessoas conforme a necessidade e facilidade de cada integrante.
+- METODOLOGIA ÁGIL: A validação das ideias do MÍNIMO PRODUTO VIÁVEL e sempre manter contato com o cliente em todas as sprints, determinando pequenas tarefas distribuídas para um grupo de pessoas conforme a necessidade e facilidade de cada integrante.
 
-- PYTHON: pouco me foi introduzido sobre tal linguagem e reparei que não é tão verbosa quanto presumi que seria. Por ser uma linguagem mais simplificada, não tive tantas dificuldades de entende-la.
+- PYTHON: Não é necessaria grandes conhecimentossobre tal linguagem para elaborar tal projeto, pois a mesma não é tão verbosa quanto julgam ser. Por ser uma linguagem mais simplificada, há tantas dificuldades de utilizá-la.
 
-    -RASPAGEM DE DADOS: a parte de raspar os dados foi muito interessante e divertida de realizar, a biblioteca Beautiful Soup é bem conhecida e tem vários vídeos de como utilizá-la, me pareceu muito clara na teoria, porém tive um pouco de dificuldade de usá-la por não entender o fluxo do HTML.
+    -RASPAGEM DE DADOS: O termo "raspagem de dados" por ser muito tecnico, aparenta ser um exercicio complexo, o que pode ser para individuos iniciantes á programação. Ao realizar a elaboração do mesmo, muitos relatam ser um experimento interessante e divertido, principalmente quando administrado com a famosa biblioteca Beautiful Soup e disposta com varios vídeos de como utilizá-la. Pode ser relatado dificuldades na ultlização caso o desenvolvedor desconheça HTML.
     
-    - MANIPULAÇÃO DE DADOS: segui uma tilha bem famosa no YouTube e consegui retirar e trocar todos os caracteres especiais dos dados que coletei do IMDB. A trilha é um pouco extensa, tive que dar umas treinadas, mas realmente ajudou muito. Hoje eu indico fortemente o CURSO EM VIDEO do professor Gustavo Guanabara.
+    - MANIPULAÇÃO DE DADOS: Para realizar a manipulação de dados em Python, basta seguir a documentação do mesmo, contudo, muitos desenvolvedores iniciantes optão por videos. um canal bem famoso por trilhas em Python é o canal Curso em Video do professor Gustavo Guanabara. O curso é extenso, entretanto completo e recheado de atividades para o aluno treinar.
     
-    - TRANSFORMAR OS DADOS EM JSON: o conceito de criar um modelo (model do projeto) me pareceu abstrato, o que realmente é, mas também é o que estrutura ao dado. Como utilizamos banco de dados não relacional, o Json foi simples.
+    - TRANSFORMAR OS DADOS EM JSON: o conceito de criar um modelo (model do projeto) aparenta ser abstrato, o que realmente é, porém é o que estrutura ao dado. Como foi utilizado banco de dados não relacional, o Json foi simples.
 
 
 
