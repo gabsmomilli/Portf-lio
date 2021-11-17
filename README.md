@@ -1,5 +1,5 @@
 # Web Bot - HeySeries
-Como os d
+
 ## - Descrição do projeto:
 
 O Projeto Integrador HeySeries visa estimular o desenvolvimento dos alunos do 1° semestre de Banco de Dados da FATEC de São José dos Campos. A proposta do projeto é desenvolver um desafio onde os professores deram a solução para que os grupos determinassem o problema. 
