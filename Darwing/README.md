@@ -2,31 +2,36 @@
 
 ## - Descrição do projeto:
 
-O Projeto Integrador HeySeries visa estimular o desenvolvimento dos alunos do 1° semestre de Banco de Dados da FATEC de São José dos Campos. A proposta do projeto é desenvolver um desafio onde os professores deram a solução para que os grupos determinassem o problema. 
+O Projeto Integrador Darwing visa estimular o desenvolvimento dos alunos do 2° semestre de Banco de Dados da FATEC de São José dos Campos. Um cliente escolhido pela Fatec, desafiou os alunos do 2° semestre com a proposta de desenvolver um sistema gerenciador de tarefas. 
 
-A proposta do projeto é a de que um grupo de alunos desenvolva uma aplicação web bot, utilizando o problema proposto pelo próprio grupo. A técnica proposta é "raspagem de dados", dado como um processo de operar uma aplicação para extrair dados valiosos de uma fonte, para utilizá-los a seu favor. Raspagem de conteúdo pode ser então "replicada" ou manipulada conforme o necessário.
+A proposta do projeto é a de que um grupo de alunos desenvolva uma aplicação administrativa de afazeres, sendo para uma unica pessoa ou até mesmo para uma empresa. O padrão de projeto proposto é MVC em Java utilizando a framewok Spring Boot, oferecendo mais agilidade para o processo de desenvolvimento, dado que os desenvolvedores conseguem reduzir o tempo gasto com as configurações iniciais.
 
-Um prazo para entrega foi estipulado e chamado de "sprint", logo introduzido a metodologia ágil e o scrum. “Masters” foram designados para cada grupos, e os mesmos seriam alunos mais experientes do último semestre do curso de banco de dados, seus objetivos eram de gerenciar e solucionar impedimentos que o grupo enfrentasse. Foi determinado o uso do gitlab durante cada sprint.
+Com o inicio a pandemia, a FATEC deve de se adequar aos métodos de ensino remoto, atrazando o periodo de ensino e de desenvolvimento das aulas e projeto. Sendo assim, com tempo reduzido, as sprints tiveram apenas duas semanas para cada entrega.
 
-Ideia do grupo: indicação de séries com boas notas de avaliação pelo público.
+Darwing foi o nome definido pelo grupo, dadndo referencia ao Charles Darwin.
 
-Logo escolheram o nome HeySeries, fazendo referência inteligência artificial da Apple "Siri".
+Foi decidido o uso do banco de dados MySQL por conveniente estudo do mesmo durante o periodo. De inicio o grupo realizou o que seria o rascunho do banco de dados, no qual foi remanejado mais tres vezes durante todo o processo. Chegando no seguinte final: 
 
-A ideia foi a de desenvolver uma aplicação web bot que faria raspagem de dados em um site, coletando dados referentes a seriados, seus respectivos gêneros, ano de lançamento e nota, sendo armazenados em um banco de dados, onde os mesmos serão disponibilizados para o front-end consumir e otimizar a experiência do usuário ao buscar por séries com melhores notas.
+### COLOCAR FOTO DO DESENHO DO BANCO 
 
-No desenvolver do projeto, foi validado com o cliente o que seria o MÍNIMO PRODUTO VIÁVEL, sendo determinado como uma raspagem simples de um único site de séries, junto de seus respectivos dados. Mostrando apenas as 10 melhores series com maiores notas.
+No desenvolver do projeto, foi validado com o cliente o que seria o MÍNIMO PRODUTO VIÁVEL, sendo determinado como um banco de dados enxuto de dados, sendo um pouco mais descritivo em cada tarefa e back-end seguindo a filosofia de desenvolvimento de software que consiste em aplicar técnicas simples que facilitam a escrita e a leitura de um código.
 
-Para o desenvolvimento da aplicação o grupo se subdividiu para organizar as tarefas. Inicialmente seria uma equipe back-end e outra de front-end.
+Para o desenvolvimento da aplicação o grupo se subdividiu para organizar as tarefas. Banco de dados e back-end.
 
 - BACK-END: 
-    - RASPAGEM DE DADOS: procuraram cursos gratuitos que ensinassem como raspar dados de um site utilizando Python. A organização deste time foi confusa, já que os dois membros basicamente procuraram as respostas separadamente, assim tomando o dobro de tempo por falta de comunicação. Por fim, um destes alunos conseguiu êxito na tarefa e trazendo alguns dados como "teste". Um ajudou o outro após aprender como funcionava tal processo.
-    - MANIPULAÇÃO DOS DADOS: alguns destes dados vieram de forma distinta, então a manipulação foi necessária. A atividade foi constituída na retirada de alguns caracteres especiais no nome do filme, gênero e data de lançamento.
-    - INSERÇÃO NO BANCO DE DADOS: este tópico exigiu uma atenção maior, pois os membros do grupo não sabiam como os bancos funcionavam e como escolher um que fosse adequado para armazenar dados de um determinado tipo. Com ajuda dos masters e outros colegas mais experientes, foi decidido pelo grupo que o ideal seria um banco de dados não relacional, pois seria armazenado em formato de Json e não em tabelas e colunas como no relacional.
-    - MANDAR DADOS DO BANCO PARA O  FRONT-END: neste ponto o front já estava funcionando, mas ainda não consumia dados do banco, eram dados locais no próprio HTML. Novamente alguns colegas mais experientes deram algumas ideias de quais frameworks poderiam utilizar, logo a micro framework Flask foi escolhida devido o acesso que um dos alunos tinham em uma plataforma de cursos voltados para área da tecnologia.
+    - MODELS : procuraram cursos gratuitos/ baratos que ensinassem como iniciar um projeto Java utilizando Spring Boot. O grupo deve grande dificuldade em iniciar as models sendo que desenho do banco de dados teria sido remanejado diversas vezes, já que a model é exatamente o modelo da tabela em si que esta no banco de dados, como os tipos de dados armazenados em cada coluna e seus relacionamentos.
+    - BANCO DE DADOS : para a integração com o banco de dados, foi definido no POM as dependencias do banco de dados e as definições como nome do banco, porta e senha no APPLICATION. A dificuldade nesata atividade foi entender onde cada informação iria ser determinada, qual arquivo e ordem.
+    - REPOSITORY: ele ministra a ligação a determinada classe do Model com possibilidade de persistir no banco de dados. Lá são definidas as Querys, porém em outro padrão com que os alunos estavão acostumados em desenvolver, pois caso o banco de dados mudasse para Oracle, por exemplo, não teria de ser reformulado muitas linhas de codigo além do POM com as dependedncias do novo banco e no APPLICATION com as definições de conexão.
+    -  SERVICE : todos os serviços onde estão as regras de negócio, validações e o que mais for preciso. No caso do Darwing, nesta camada que foi criada as validações, como:
+        - se haviam campos nulos;
+        - se o desenvolvedor já não estava cadastrado;
+        - carga horaria maior que 0 horas. 
+     entre outras que foram requisitadas neste projeto.
+    - CONTROLLER : classe responsável pela preparação de um modelo de Map com dados a serem exibidos pela view e pela escolha da view correta. Basicamente ele é o responsável por controlar as requisições indicando quem deve receber as requisições para quem deve responde-las. Entregando então pra determinada barra (/tarefa) o que é requisitado como metodo de requisição HTTP.
     
- - FRONT-END:
-    - HTML e CSS: os alunos designados para a execução do front-end, começaram a desenvolver a interface gráfica com HTML e CSS, e logo tiveram grandes resultados de como ficaria o projeto em vista do usuário. A área de interação era simples, com uma logo desenvolvida no Canvas e transformada em PNG, uma breve descrição sobre o projeto e, porque foi desenvolvido, e a listagem das 10 series no próprio HTML.
-    - PUXAR DADOS DO BANCO: além do framework que o grupo de back-end decidiu utilizar, a equipe de front-end precisaria de JavaScript para manipular os dados como o manuseio de filtros e busca. Este foi um dos processos mais demorados e trabalhosos da equipe, em vista o grau de dificuldade.
+- BANCO DE DADOS 
+    - MYSQL : devido o inicio a materia de Arquitetura e Modelagem e Banco de Dados, visando a utilização do banco de dados MySQL, o grupo determinou que este seria o ideal, já que poderiam tirar dúvidas com o professor que dava a tal materia.
+ - 
 
 Por fim o projeto teve algumas dificuldades, perca de alguns colegas desistentes do curso, porém, em geral, o grupo foi o melhor e único a tirar 10!
 
