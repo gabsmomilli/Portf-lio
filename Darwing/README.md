@@ -31,84 +31,44 @@ Para o desenvolvimento da aplicação o grupo se subdividiu para organizar as ta
     
 - BANCO DE DADOS 
     - MYSQL : devido o inicio a materia de Arquitetura e Modelagem e Banco de Dados, visando a utilização do banco de dados MySQL, o grupo determinou que este seria o ideal, já que poderiam tirar dúvidas com o professor que dava a tal materia.
- - 
-
-Por fim o projeto teve algumas dificuldades, perca de alguns colegas desistentes do curso, porém, em geral, o grupo foi o melhor e único a tirar 10!
 
 ## - Tecnologias 
-Foi introduzido a linguagem Python para os alunos do 1° semestre, logo projeto deveria seguir com o desenvolvimento com a mesma. Como o a equipe distinguia de conhecimentos sobre desenvolvimento e nomenclaturas como "raspagem de dados", logo a dificuldade na comunicação entre eles e com os professores se manifestou. Por fim realizaram a raspagem de dados com sucesso, utilizando um pacote chamado Beautiful Soup, porém sem armazená-los em algum local. Devido a baixa granularidade dos dados, foi definido o uso de um banco de dados não relacional, armazenariam o nome da série, gênero, data de lançamento e nota em formato de Json; sendo ele o CouchDB. Para fazer a conexão entre os dados e a interface gráfica, foi empregada a framework Flask. E por fim, o front-end foi desenvolvido utilizando HTML, CSS e Javascript para interface e a manipulação dos dados, ato seria a filtragem dos dados mostrados.
+Foi introduzido a linguagem Java para os alunos do 2° semestre, logo projeto deveria seguir com o desenvolvimento com a mesma. Foi sujerido o uso da framework Spring Boot por alunos mais experientes do mesmo curso. Dúvidas e ademias foram tiradas tais colegas, pois os alunos ainda não tinham aulas com professores mais expecializados em tal framework. Foi decdido a utilização do Spring pois seria  reduzido linhas de codigo que fariam com a linguagem Java pura, além de obter padrões de projetos mais compreensiveis para alunos que estavam começando a ver orientação a objetos.
 
-- Python:
-  Linguagem de programação, desenvolvida para ser simples, fácil de aprender e versátil, logo, para ser utilizá-la em diversas atividades. Sendo ótima para ser a 1° linguagem de se aprender, também é uma das mais utilizadas no mundo e valorizada por poder ser utilizada em diversas áreas, pode se diferenciar de outras linguagens.
+- Java:
+  Linguagem de programação orientada a objetos, provendo diversas frameworks sendo possivel a utilização nas aplicações, como por exemplo o Spring, Quarkus, Micronauts, JSF (JavaServer Faces), dentre outros. Java dispoe de varios tipod de dispositivos, como por exemplo: web, mobile, TV Digital, dentre outros. Além disso, há varios cursos gratuitos sobre os mais variados assuntos.
   
- - Beautiful Soup: 
-    Pacote Python para análise de documentos HTML e XML. Ele cria uma árvore de análise para páginas analisadas que podem ser usadas para extrair dados de HTML, o que é útil para web scraping.
+ - Spring Bott: 
+     Framework Java open source que tem como objetivo facilitar esse processo em aplicações Java. Consequentemente, trazendo mais agilidade para o processo de desenvolvimento, reduzindo linhas de codigo. Com configurações rápidas, é possivel, por exemplo, disponibilizar uma aplicação baseada no Spring MVC, utilizando o Hibernate + JPA.
   
-- Flask:
-  Micro framework multiplataforma escrito em Python para gerenciamento no mesmo e disponível em código aberto, oferece um modelo simples para desenvolvimento web. Neste caso lançando as informações do banco de dados até o front-end.
+- Hibernate:
+  Ferramenta para mapeamento objeto/relacional para ambientes Java, no qual refere-se à técnica de mapeamento de uma representação de dados em um modelo de objetos para um modelo de dados relacional. Cuidando do mapeamento das classes Java para tabelas do banco de dados (e dos tipos de dados Java para os tipos de dados SQL), mas também provê facilidades para consultar e retornar os dados da consulta, e pode reduzir significativamente o tempo de desenvolvimento
   
-- CouchDB:
-  Banco de dados NoSQL orientado a documentos. Utiliza JSON como formato de dados e JavaScript como linguagem de consulta. Diferente da maioria dos outros bancos de dados, seu conteúdo é acessado e modificado através de uma API REST.
-
-- Javacript:
-  Linguagem de programação que permite a criação de conteúdos que se atualizam dinamicamente, controla multimídias, imagens animadas, pesquisas por filtros, entre outros.
+- JPA:
+  Padrão da linguagem Java que descreve uma interface comum para frameworks de persistência de dados. A JPA define um meio de mapeamento objeto-relacional para objetos Java simples e comuns, denominados beans de entidade.
+ 
+- MAVEN:
+  Ferramenta de automação de compilação utilizada primariamente em projetos Java. 
 
 ## Contribuições individuais
 
-Para desenvolver o back-end do projeto, foi decidido a aproveitamento da linguagem Python e o uso das bibliotecas compatíveis com a mesma. Literalmente foi pesquisado por "raspagem de dados" no Google e vários vídeos e passo-a-passo apontados. O pacote Beautiful Soup era o mais citado dentre os links, logo foi decidido a implementado. 
+Para desenvolver o back-end do projeto, foi decidido a aproveitamento da linguagem Java e o uso das bibliotecas compatíveis com a mesma. Foi levado em consideração a indicação de alunos mais experientes do mesmo curso, na hora de escolher padrões e frameworks do projeto. No caso, a tecnica Spring MVC com o uso do proprio Spring Boot. 
 
-Deve ser importado no inicio da classe, conforme a figura a baixo:
-
-![image](https://user-images.githubusercontent.com/55815856/142081595-0be8f770-2b7b-42d1-9b62-60a945e39e26.png)
-
-Declarar o site que deseja consumir:
-
-https://www.imdb.com/search/title/?title_type=tv_series&release_date=1980-01-01,2019-12-31&user_rating=,%27%2710.0&count=250
-
-![gfhadgfadgaidaygafgoaehgouaehg](https://user-images.githubusercontent.com/55815856/141889016-3b3472d9-ccda-4ad0-ba75-1c31019e81ac.PNG)
-
-Selecionando dados relevantes para API consumir:
-
-- Coleta de dados específicos:
-
-    - Visualização através do browser: 
-    
-    Botão direito do mouse -> Inspecionar -> Elementos
-    
-    ![image](https://user-images.githubusercontent.com/55815856/141889579-7efcc2a8-58ef-470e-9838-3af923fbce9c.png)
- 
-    - Como os dados são "capturados" pelo pacote Beautiful Soup:
-    
-    Utilizando a visualização fornecida pelo browser, pode-se ver o caminho para submeter tal dado.
-    
-    ![puxando dados necessarios](https://user-images.githubusercontent.com/55815856/141889757-f9f27295-51e1-454f-a92d-f112f4c435f9.PNG)
-
-Foram encontradas dificuldades em paginar devido a diferença entre URL e quantidade apresentada; raspar outros sites também foi um impedimento pois não foi apresentado métodos ágeis de realizar tal processo. Por fim foi decidido manter um único site com uma única pagina sendo consumida.
-
-Após extrair os dados, resolvido que os dados deveriam ter as seguintes modificações:
-
-    - O caractere apóstrofo deveria ser retirado dos títulos;
-   
-    - As notas deveriam ser números quebrados;
-    
-    - Alguns gêneros tinham erro de escrita com "/n", então deveriam ser retirados;
-    
-    - Caracteres como números romanos, parêntese aperto e fechado, sinal meia-risca deveria ser retirados das datas de lançamento;
-    
-    - Deveriam ser mantidos somente o ano de lançamento, ignorando o ano em que a serie encerou.
-        Exemplo: (2007-2012) -> 2007
-
-Foram estudadas as possibilidades de local e como efetuar o armazenamento os dados raspados, até que fosse concluída como melhor ideia a utilização de um banco de dados não relacional, pois não havia uma massa de granularidade dentre os dados. O CouchDB foi indicado por alunos mais experientes da mesma faculdade. Para dispor do banco de dados, é necessário declarar o login e senha código em Python para autenticação.
-
-- Como autenticar no CouchDB:
-
-![login couchdb](https://user-images.githubusercontent.com/55815856/141023643-b801c2e9-99aa-4a64-a266-1d41c992f9ba.PNG)
-
-
-- Json no banco de dados:
-
-![image](https://user-images.githubusercontent.com/55815856/142066587-4ac894e6-36b3-446b-9e38-7b083705c0bc.png)
-
+Criando um projeto Spring Boot:
+    - Entrar no link https://start.spring.io/
+    - Projet: Maven
+    - Language: Java 
+    - Spring Boot: 0.0.1-SNAPSHOT (na epoca)
+    - Group: test/java/br/gov/sp/fatec/projetointegrador
+    - Packagin: JAR
+    - JAVA:  11
+    - Dependencies: spring-boot-starter-data-jpa
+                    spring-boot-starter-web
+                    postgresql
+                    lombok
+                    spring-boot-starter-test
+               
+ Desenvolvimentos das Models conforme desenhado no banco de dados
 
 ## Aprendizados efetivos
 - SCRUM: com o desenvolver deste projeto é possível informar-se de como funciona o scrum. O papel de cada indivíduo da equipe e como a comunicação pode ser falha. Cada etapa ou avanço deve ser inspecionado, de modo a identificar se são necessárias possíveis mudanças ou adaptações. Se no sprint anterior forem identificadas necessidades de mudanças é crucial que a equipe Scrum esteja preparado e capacitado para realiza-las. Realizar reuniões para manter a comunicação entre os indivíduos e reportar os andamentos das tasks, dificuldades e ou ideias.
