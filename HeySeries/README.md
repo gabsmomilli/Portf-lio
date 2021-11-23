@@ -1,4 +1,4 @@
-# Web Bot - HeySeries
+#  HeySeries - Web Bot
 
 ## Descrição do projeto:
 
