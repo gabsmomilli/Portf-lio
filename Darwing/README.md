@@ -1,6 +1,6 @@
 # Darwing - Soluções de tarefas
 
-## - Descrição do projeto:
+## Descrição do projeto:
 
 O Projeto Integrador Darwing visa estimular o desenvolvimento dos alunos do 2° semestre de Banco de Dados da FATEC de São José dos Campos. Um cliente escolhido pela Fatec, desafiou os alunos do 2° semestre com a proposta de desenvolver um sistema gerenciador de tarefas. 
 
@@ -32,7 +32,7 @@ Para o desenvolvimento da aplicação o grupo se subdividiu para organizar as ta
 - BANCO DE DADOS 
     - MYSQL : devido o inicio a materia de Arquitetura e Modelagem e Banco de Dados, visando a utilização do banco de dados MySQL, o grupo determinou que este seria o ideal, já que poderiam tirar dúvidas com o professor que dava a tal materia.
 
-## - Tecnologias 
+## Tecnologias 
 Foi introduzido a linguagem Java para os alunos do 2° semestre, logo projeto deveria seguir com o desenvolvimento com a mesma. Foi sujerido o uso da framework Spring Boot por alunos mais experientes do mesmo curso. Dúvidas e ademias foram tiradas tais colegas, pois os alunos ainda não tinham aulas com professores mais expecializados em tal framework. Foi decdido a utilização do Spring pois seria  reduzido linhas de codigo que fariam com a linguagem Java pura, além de obter padrões de projetos mais compreensiveis para alunos que estavam começando a ver orientação a objetos.
 
 - Java:
