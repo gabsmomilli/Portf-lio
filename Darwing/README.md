@@ -1,4 +1,4 @@
-# Web Bot - HeySeries
+# Darwing - Soluções de tarefas
 
 ## - Descrição do projeto:
 
@@ -68,14 +68,33 @@ Criando um projeto Spring Boot:
                     lombok
                     spring-boot-starter-test
                
- Desenvolvimentos das Models conforme desenhado no banco de dados
+ Desenvolvimentos das Models conforme desenhado no banco de dados:
+    - Seguindo o banco de dados, deve ser declarado o tipo das variaveis equivalente;
+    - Usar @Entity para o projeto entender que esat classe é uma entidade;
+    - @Table declarando logo em seguinda o nome da tabela no qual esta se referindo;
+    - @Builder para utilizar o Lombok.
+ Conexão com o banco de dados no application:
+    - Declarara por padrão do banco de dados, no caso deste projeto foi utilizado 8081;
+    - Colocar a url, username e senha da coexão.
+  Criação dos Repositories: 
+    - Deixar evidente que é uma interface e extender do JpaRepository, identificando sua model logo em seguida com o tipo da variavel id da tabela;
+    - Fazer as querys usando @Query no padrão do Spring.
+   Desenvolvimento da camada Service:
+    - Utilizar o @Service para o sistema entender que esta é a camada de serviço.
+    - Colocar anotação @Autowired e logo em seguinda o repository desejado;
+    - Desenvolver as validações necessarias para tal camada.
+   Adição da camada de Controle:
+    - No controller, deverá ser incrementado a notação @RestController e @RestMapping, seguido de sua url. Exemplo: @RequestMapping("/projetos");
+    - Colocar a anotação @Autowired seguida da camada repository desejada;
+    - Declarar os metodos de busca corespondentes no Repository e colocar a notação do tipo de requerimento HTTP, tal como PUST, GET e DELETE.
+   
 
 ## Aprendizados efetivos
-- SCRUM: com o desenvolver deste projeto é possível informar-se de como funciona o scrum. O papel de cada indivíduo da equipe e como a comunicação pode ser falha. Cada etapa ou avanço deve ser inspecionado, de modo a identificar se são necessárias possíveis mudanças ou adaptações. Se no sprint anterior forem identificadas necessidades de mudanças é crucial que a equipe Scrum esteja preparado e capacitado para realiza-las. Realizar reuniões para manter a comunicação entre os indivíduos e reportar os andamentos das tasks, dificuldades e ou ideias.
+- AUTONOMIA: Capacidade que um individuo tem de tomar decisoões com base nas informações que a ele são disponiveis. O projeto Darwing foi desenvolvido no todo com poucos integrantes, sendo um deles totalmente responsavel pelo back-end. Autonomia, proatividade e responsabilidade foram requiridas em todo processo, sendo uma das maiores dificuldades nos alunos inicantes em programação
 
 - METODOLOGIA ÁGIL: sistema organizacional que contribui para o desenvolvimento de soluções mais eficientes e dinâmicas em grupo, buscando otimizar fluxos de trabalho, melhorar a produtividade de projetos e elevar as perspectivas de sucesso do seu negócio. Aperfeiçoando a produtividade de projetos e aumentar as perspectivas dos resultados. Mantendo como prioridade a satisfação do cliente por meio de entregas de valor contínuas e rápidas. Garantindo a colaboração das partes envolvidas em todo o projeto, por meio de reuniões continuas.
 
-- PYTHON: Devido a simplicidade da linguagem e a demanda de menos código para concluir tarefas básicas quando comparadas a padrões de outras linguagens, sintaxe intuitiva, documentação e passo-a-passo aos montes, bibliotecas gratuitas e por ser uma linguagem interpretada, Python não causa grandes dificuldades em ser utilizada mesmo por desenvolvedores iniciantes. Há muitos cursos bons e gratuitos recheados de conteúdo, basta praticar.
+- SPRING : Java é uma linguagem que demanda muitas linhas de codigo e a utilização da framework minimiza o mesmo, afim de tarzer mais agilidade para o processo de desenvolvimento. O uso 
 
 - RASPAGEM DE DADOS: O termo "raspagem de dados" por ser muito técnico, aparenta ser um exercício complexo, o que pode ser para indivíduos iniciantes á programação. Ao           realizar a elaboração do mesmo, muitos relatam ser um experimento interessante e divertido, principalmente quando administrado com a famosa biblioteca Beautiful Soup e disposta com vários vídeos de como utilizá-la. Pode ser relatado dificuldades na utilização caso o desenvolvedor desconheça HTML.
     
