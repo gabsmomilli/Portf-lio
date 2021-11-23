@@ -55,13 +55,21 @@ Foi introduzido a linguagem Java para os alunos do 2° semestre, logo projeto de
 Para desenvolver o back-end do projeto, foi decidido a aproveitamento da linguagem Java e o uso das bibliotecas compatíveis com a mesma. Foi levado em consideração a indicação de alunos mais experientes do mesmo curso, na hora de escolher padrões e frameworks do projeto. No caso, a tecnica Spring MVC com o uso do proprio Spring Boot. 
 
 Criando um projeto Spring Boot:
+
     - Entrar no link https://start.spring.io/
+    
     - Projet: Maven
+    
     - Language: Java 
+    
     - Spring Boot: 0.0.1-SNAPSHOT (na epoca)
+    
     - Group: test/java/br/gov/sp/fatec/projetointegrador
+    
     - Packagin: JAR
+    
     - JAVA:  11
+    
     - Dependencies: spring-boot-starter-data-jpa
                     spring-boot-starter-web
                     postgresql
@@ -69,23 +77,40 @@ Criando um projeto Spring Boot:
                     spring-boot-starter-test
                
  Desenvolvimentos das Models conforme desenhado no banco de dados:
+ 
     - Seguindo o banco de dados, deve ser declarado o tipo das variaveis equivalente;
+    
     - Usar @Entity para o projeto entender que esat classe é uma entidade;
+    
     - @Table declarando logo em seguinda o nome da tabela no qual esta se referindo;
+    
     - @Builder para utilizar o Lombok.
+    
  Conexão com o banco de dados no application:
+ 
     - Declarara por padrão do banco de dados, no caso deste projeto foi utilizado 8081;
+    
     - Colocar a url, username e senha da coexão.
+    
   Criação dos Repositories: 
+  
     - Deixar evidente que é uma interface e extender do JpaRepository, identificando sua model logo em seguida com o tipo da variavel id da tabela;
     - Fazer as querys usando @Query no padrão do Spring.
+    
    Desenvolvimento da camada Service:
+   
     - Utilizar o @Service para o sistema entender que esta é a camada de serviço.
+    
     - Colocar anotação @Autowired e logo em seguinda o repository desejado;
+    
     - Desenvolver as validações necessarias para tal camada.
+    
    Adição da camada de Controle:
+   
     - No controller, deverá ser incrementado a notação @RestController e @RestMapping, seguido de sua url. Exemplo: @RequestMapping("/projetos");
+    
     - Colocar a anotação @Autowired seguida da camada repository desejada;
+    
     - Declarar os metodos de busca corespondentes no Repository e colocar a notação do tipo de requerimento HTTP, tal como PUST, GET e DELETE.
    
 
@@ -95,9 +120,3 @@ Criando um projeto Spring Boot:
 - METODOLOGIA ÁGIL: sistema organizacional que contribui para o desenvolvimento de soluções mais eficientes e dinâmicas em grupo, buscando otimizar fluxos de trabalho, melhorar a produtividade de projetos e elevar as perspectivas de sucesso do seu negócio. Aperfeiçoando a produtividade de projetos e aumentar as perspectivas dos resultados. Mantendo como prioridade a satisfação do cliente por meio de entregas de valor contínuas e rápidas. Garantindo a colaboração das partes envolvidas em todo o projeto, por meio de reuniões continuas.
 
 - SPRING : Java é uma linguagem que demanda muitas linhas de codigo e a utilização da framework minimiza o mesmo, afim de tarzer mais agilidade para o processo de desenvolvimento. O uso 
-
-- RASPAGEM DE DADOS: O termo "raspagem de dados" por ser muito técnico, aparenta ser um exercício complexo, o que pode ser para indivíduos iniciantes á programação. Ao           realizar a elaboração do mesmo, muitos relatam ser um experimento interessante e divertido, principalmente quando administrado com a famosa biblioteca Beautiful Soup e disposta com vários vídeos de como utilizá-la. Pode ser relatado dificuldades na utilização caso o desenvolvedor desconheça HTML.
-    
-- MANIPULAÇÃO DE DADOS: Para realizar a manipulação de dados em Python, basta seguir a documentação do mesmo, contudo, muitos desenvolvedores iniciantes optam por                vídeos. um canal bem famoso por trilhas em Python é o canal Curso em Vídeo do professor Gustavo Guanabara. O curso é extenso, entretanto completo e recheado de                   atividades para o aluno treinar.
-
-- TRANSFORMAR OS DADOS EM JSON: o conceito de criar um modelo (model do projeto) aparenta ser abstrato, o que realmente é, porém é o que estrutura ao dado. Como foi              utilizado banco de dados não relacional, o Json foi simples.
