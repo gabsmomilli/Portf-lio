@@ -22,9 +22,10 @@ O Projeto Integrador JobNation visa estimular o desenvolvimento dos alunos do 4�
 ### Proposta:
 - Busca por localização: número de conduções para chegar ao local de trabalho.
 
--Busca por diferentes critérios: rota(s) de pesquisa estão sendo desenhadas para propiciar liberdade de consulta ao BD. Nesse passo, a aplicação varrerá currículos já cadastrados e identificará candidato(s) mais adequados à vaga.
+- Busca por diferentes critérios: rota(s) de pesquisa estão sendo desenhadas para propiciar liberdade de consulta ao BD. Nesse passo, a aplicação varrerá currículos já cadastrados e identificará candidato(s) mais adequados à vaga.
 
 Diagrama de caso de uso:
+
 ![image](https://user-images.githubusercontent.com/61089745/159176256-013d0b24-b377-4d74-a132-cef3b569b13c.png)
 
 #### FEATURES:
@@ -67,90 +68,75 @@ Diagrama de caso de uso:
 ![image](https://user-images.githubusercontent.com/61089745/159176294-61786526-1747-4945-9dc8-e6a7b0cc23a5.png)
 
 
-## Tecnologias 
-Foi introduzido a linguagem Python para os alunos do 1° semestre, logo projeto deveria seguir com o desenvolvimento com a mesma. Como o a equipe distinguia de conhecimentos sobre desenvolvimento e nomenclaturas como "raspagem de dados", logo a dificuldade na comunicação entre eles e com os professores se manifestou. Por fim realizaram a raspagem de dados com sucesso, utilizando um pacote chamado Beautiful Soup, porém sem armazená-los em algum local. Devido a baixa granularidade dos dados, foi definido o uso de um banco de dados não relacional, armazenariam o nome da série, gênero, data de lançamento e nota em formato de Json; sendo ele o CouchDB. Para fazer a conexão entre os dados e a interface gráfica, foi empregada a framework Flask. E por fim, o front-end foi desenvolvido utilizando HTML, CSS e Javascript para interface e a manipulação dos dados, ato seria a filtragem dos dados mostrados.
+### Inovação:
 
-- Python:
-  Linguagem de programação, desenvolvida para ser simples, fácil de aprender e versátil, logo, para ser utilizá-la em diversas atividades. Sendo ótima para ser a 1° linguagem de se aprender, também é uma das mais utilizadas no mundo e valorizada por poder ser utilizada em diversas áreas, pode se diferenciar de outras linguagens.
-  
- - Beautiful Soup: 
-    Pacote Python para análise de documentos HTML e XML. Ele cria uma árvore de análise para páginas analisadas que podem ser usadas para extrair dados de HTML, o que é útil para web scraping.
-  
-- Flask:
-  Micro framework multiplataforma escrito em Python para gerenciamento no mesmo e disponível em código aberto, oferece um modelo simples para desenvolvimento web. Neste caso lançando as informações do banco de dados até o front-end.
-  
-- CouchDB:
-  Banco de dados NoSQL orientado a documentos. Utiliza JSON como formato de dados e JavaScript como linguagem de consulta. Diferente da maioria dos outros bancos de dados, seu conteúdo é acessado e modificado através de uma API REST.
+Criamos o 1o BD com benchmarking no LINKEDIN, subsequentemente alterando o protagonismo para a entidade vaga (VACANCY).
 
-- Javacript:
-  Linguagem de programação que permite a criação de conteúdos que se atualizam dinamicamente, controla multimídias, imagens animadas, pesquisas por filtros, entre outros.
+Então, estudamos quais ferramentas servirão aos requisitos (não) funcionais: 
 
-## Contribuições individuais
+- No BACK-END - Mais de uma linguagem de programação;
 
-Para desenvolver o back-end do projeto, foi decidido a aproveitamento da linguagem Python e o uso das bibliotecas compatíveis com a mesma. Literalmente foi pesquisado por "raspagem de dados" no Google e vários vídeos e passo-a-passo apontados. O pacote Beautiful Soup era o mais citado dentre os links, logo foi decidido a implementado. 
-
-Deve ser importado no inicio da classe, conforme a figura a baixo:
-
-![image](https://user-images.githubusercontent.com/55815856/142081595-0be8f770-2b7b-42d1-9b62-60a945e39e26.png)
-
-Declarar o site que deseja consumir:
-
-https://www.imdb.com/search/title/?title_type=tv_series&release_date=1980-01-01,2019-12-31&user_rating=,%27%2710.0&count=250
-
-![gfhadgfadgaidaygafgoaehgouaehg](https://user-images.githubusercontent.com/55815856/141889016-3b3472d9-ccda-4ad0-ba75-1c31019e81ac.PNG)
-
-Selecionando dados relevantes para API consumir:
-
-- Coleta de dados específicos:
-
-    - Visualização através do browser: 
-    
-    Botão direito do mouse -> Inspecionar -> Elementos
-    
-    ![image](https://user-images.githubusercontent.com/55815856/141889579-7efcc2a8-58ef-470e-9838-3af923fbce9c.png)
- 
-    - Como os dados são "capturados" pelo pacote Beautiful Soup:
-    
-    Utilizando a visualização fornecida pelo browser, pode-se ver o caminho para submeter tal dado.
-    
-    ![puxando dados necessarios](https://user-images.githubusercontent.com/55815856/141889757-f9f27295-51e1-454f-a92d-f112f4c435f9.PNG)
-
-Foram encontradas dificuldades em paginar devido a diferença entre URL e quantidade apresentada; raspar outros sites também foi um impedimento pois não foi apresentado métodos ágeis de realizar tal processo. Por fim foi decidido manter um único site com uma única pagina sendo consumida.
-
-Após extrair os dados, resolvido que os dados deveriam ter as seguintes modificações:
-
-    - O caractere apóstrofo deveria ser retirado dos títulos;
-   
-    - As notas deveriam ser números quebrados;
-    
-    - Alguns gêneros tinham erro de escrita com "/n", então deveriam ser retirados;
-    
-    - Caracteres como números romanos, parêntese aperto e fechado, sinal meia-risca deveria ser retirados das datas de lançamento;
-    
-    - Deveriam ser mantidos somente o ano de lançamento, ignorando o ano em que a serie encerou.
-        Exemplo: (2007-2012) -> 2007
-
-Foram estudadas as possibilidades de local e como efetuar o armazenamento os dados raspados, até que fosse concluída como melhor ideia a utilização de um banco de dados não relacional, pois não havia uma massa de granularidade dentre os dados. O CouchDB foi indicado por alunos mais experientes da mesma faculdade. Para dispor do banco de dados, é necessário declarar o login e senha código em Python para autenticação.
-
-- Como autenticar no CouchDB:
-
-![login couchdb](https://user-images.githubusercontent.com/55815856/141023643-b801c2e9-99aa-4a64-a266-1d41c992f9ba.PNG)
+- No BD - FUNCTIONS para dar flexibilidade às QUERIES;
 
 
-- Json no banco de dados:
+### **II - TECNOLOGIAS**:iphone:
 
-![image](https://user-images.githubusercontent.com/55815856/142066587-4ac894e6-36b3-446b-9e38-7b083705c0bc.png)
+![image](https://user-images.githubusercontent.com/61089745/161389515-9616f82e-1054-46e8-9a72-44205be9678a.png)
+- Oracle 11g (Sql developer): É um banco de dados popular e relacional, foi usado para criar PROCEDURE PL/SQL: Consulta de candidatos por distância (LAT,LONG); PROCEDURE  de devolução de listas por Múltiplos  Critérios com CURSOR; População do BD com dados fictícios para teste de PERFORMANCE;
+![image](https://user-images.githubusercontent.com/61089745/162579889-84c7541e-ae0e-437b-b990-6c8dbd0efb14.png)
 
 
-## Aprendizados efetivos
-- SCRUM: com o desenvolver deste projeto é possível informar-se de como funciona o scrum. O papel de cada indivíduo da equipe e como a comunicação pode ser falha. Cada etapa ou avanço deve ser inspecionado, de modo a identificar se são necessárias possíveis mudanças ou adaptações. Se no sprint anterior forem identificadas necessidades de mudanças é crucial que a equipe Scrum esteja preparado e capacitado para realiza-las. Realizar reuniões para manter a comunicação entre os indivíduos e reportar os andamentos das tasks, dificuldades e ou ideias.
+![image](https://user-images.githubusercontent.com/61089745/161389576-a377fd09-2c54-40b6-9a7e-c000dd778977.png)
+- Java (IntelliJ / Eclipse): Java é uma linguagem de programação orientada a objetos, para desenvolver o backend foi usado os ambientes Eclipse e Intellij para desenvolvimento integrado, escrito em Java. 
 
-- METODOLOGIA ÁGIL: sistema organizacional que contribui para o desenvolvimento de soluções mais eficientes e dinâmicas em grupo, buscando otimizar fluxos de trabalho, melhorar a produtividade de projetos e elevar as perspectivas de sucesso do seu negócio. Aperfeiçoando a produtividade de projetos e aumentar as perspectivas dos resultados. Mantendo como prioridade a satisfação do cliente por meio de entregas de valor contínuas e rápidas. Garantindo a colaboração das partes envolvidas em todo o projeto, por meio de reuniões continuas.
+![image](https://user-images.githubusercontent.com/61089745/162579991-da2ef388-de98-4e67-80e6-e67fd83420da.png)
 
-- PYTHON: Devido a simplicidade da linguagem e a demanda de menos código para concluir tarefas básicas quando comparadas a padrões de outras linguagens, sintaxe intuitiva, documentação e passo-a-passo aos montes, bibliotecas gratuitas e por ser uma linguagem interpretada, Python não causa grandes dificuldades em ser utilizada mesmo por desenvolvedores iniciantes. Há muitos cursos bons e gratuitos recheados de conteúdo, basta praticar.
 
-- RASPAGEM DE DADOS: O termo "raspagem de dados" por ser muito técnico, aparenta ser um exercício complexo, o que pode ser para indivíduos iniciantes á programação. Ao           realizar a elaboração do mesmo, muitos relatam ser um experimento interessante e divertido, principalmente quando administrado com a famosa biblioteca Beautiful Soup e disposta com vários vídeos de como utilizá-la. Pode ser relatado dificuldades na utilização caso o desenvolvedor desconheça HTML.
-    
-- MANIPULAÇÃO DE DADOS: Para realizar a manipulação de dados em Python, basta seguir a documentação do mesmo, contudo, muitos desenvolvedores iniciantes optam por                vídeos. um canal bem famoso por trilhas em Python é o canal Curso em Vídeo do professor Gustavo Guanabara. O curso é extenso, entretanto completo e recheado de                   atividades para o aluno treinar.
+![image](https://user-images.githubusercontent.com/61089745/161389691-e18df3bc-2b7d-41bd-b70b-fd59e8d8b266.png)
+- Javascript (Node-JS): JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível. Foi utilizada essa linguagem para fazer a aplicação consumir os dados da API do Google Maps.
+![image](https://user-images.githubusercontent.com/61089745/162579708-0e210217-588c-4041-b742-fdb2a1cea274.png)
 
-- TRANSFORMAR OS DADOS EM JSON: o conceito de criar um modelo (model do projeto) aparenta ser abstrato, o que realmente é, porém é o que estrutura ao dado. Como foi              utilizado banco de dados não relacional, o Json foi simples.
+
+![image](https://user-images.githubusercontent.com/61089745/161389788-7f4c74dd-fa4b-410a-9e51-376cf8c33817.png)
+- Insomnia/POSTMAN: É uma API Client que facilita aos desenvolvedores criar, compartilhar, testar e documentar APIs. Usamos essas API's para testar o backend com as requisições GET, POST, PUT, DELETE e o match entre os candidatos e vagas.
+
+
+![image](https://user-images.githubusercontent.com/61089745/161389814-314472c1-6046-4348-93ff-c5f1781d0f82.png)
+- Git (GitLab): O GitLab é um gerenciador de repositório de software baseado em git, com suporte a Wiki, gerenciamento de tarefas e CI/CD. Guardamos o código do projeto nesse repositório.
+
+
+![image](https://user-images.githubusercontent.com/61089745/161389851-2c62d470-bb85-479e-9ac2-67c9346a3ee5.png)
+- OBS Studio / Kdenlive: É um programa de streaming e gravação gratuito. Foi gravado as telas da aplicação e apresentação usando a ferramenta OBS Studio.
+
+
+![image](https://user-images.githubusercontent.com/61089745/161389881-fda70645-5197-4c2d-9309-9537b2537a68.png)
+- API Google Maps: É um serviço público e gratuito que qualquer pessoa pode usar em seus sites e aplicações. A API foi usada para buscar quantidade de meios de transporte necessárias ao candidato chegar ao local de trabalho.
+![image](https://user-images.githubusercontent.com/61089745/162579814-4ef739d0-e3b4-4f8b-bd23-2d733e106e97.png)
+
+
+### **III - CONTRIBUIÇÕES INDIVIDUAIS**:bow:
+
+
+Nesse projeto como o foco era o backend e banco de dados não era um requisito ter frontend na aplicação, portanto nas divisões de tasks na equipe escolhi contribuir como de costume a aplicação, ajudando a desenvolver o backend.
+
+Sendo a integrante do grupo com mais conhecimento em Java juntod da framework Spring, dei inicio ao projeto e ensinei aos colegas a desenvolver o mesmo. Com isso, demostrei como utilizo 9 camadas para desenvolvimento das entidades das quais foram definidas.
+
+![image](https://user-images.githubusercontent.com/61089745/164765729-75257564-823f-4901-8cb2-55be55c0759c.png)
+
+ O metodo que eu utilizo chama (MPConConRVS) Model, Payload, Converter, Repository, Validator, Services, Controller.
+
+Fiquei responsável por criar as respectivas camadas e revisar as que meus colegas fizeram.
+
+![image](https://user-images.githubusercontent.com/61089745/164775826-1cccd9f0-f193-4cd6-b864-38682c7a4365.png)
+
+### **IV - APRENDIZADOS EFETIVOS**:closed_book:
+
+**Hard Skills Efetivamente Desenvolvidas:**
+
+- Neste semestre eu apercoei meus conhecimentos em Java.
+- Ensinei e revisei codigo de meus colegas.
+- Tomei a frente e liderei o back-end.
+
+**Soft Skills Efetivamente Desenvolvidas:**
+
+Aprendi a compartilhar e dividir task no backend, aprendemos mais sobre a comunicação para todos estarem ciente do desenvolvimentos das sprints, colocando em prática o método scrum com Dailys, Revisão e Passagem de Conhecimento.
