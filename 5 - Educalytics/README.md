@@ -234,14 +234,14 @@ Implementei dois bancos de dados no sistema, sendo um relacional e outro não re
 
 Este foi o Projeto Integrador mais desafiador por ter a equipe reduzida e implementação de varias tecnologias e soluções a serem aplicadas.
 
-Aprimorei os conhecimentos em back-end utilizando um novo metodo orientado pelos professores, e desenvolvi a conexão entre a API e dois bancos diferentes.
+Aprimorei os conhecimentos em back-end utilizando um novo método orientado pelos professores, e desenvolvi a conexão entre a API e dois bancos diferentes.
 
 Através dos conhecimentos compartilhados entre o grupo aprendi sobre a ferramenta ETL;
 
-**Soft Skills Efetivamente Desenvolvidas:**
+Soft Skills Efetivamente Desenvolvidas:
 
 Continuei desenvolvendo e melhorando a comunicação, trabalho em equipe e ajuda mútua;
 
-Tivemos que sair da nossa zona de conforto e buscar novos conhecimentos através de cursos extras e ajuda dos professores para conseguir desenvolver novas features da aplicação em que não tinhamos vivência;
+Tivemos que sair da nossa zona de conforto e buscar novos conhecimentos através de cursos extras e ajuda dos professores para conseguir desenvolver novas features da aplicação em que não tínhamos vivência;
 
 Conseguimos ter a inteligência e resiliência para construir um bom planejamento. O método Scrum nos ajudou a cumprir todas as entregas e sprints do projeto.
