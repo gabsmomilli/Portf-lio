@@ -4,7 +4,7 @@
 
 Neste quinto Projeto Integrador a FATEC trouxe o Cliente "IONIC HEALTH" para que pudéssemos achar uma solução tecnológica para sanar e atender às necessidades do cliente. 
 
-O cliente busca obter indicadores e avaliar o uso e gerenciamento de sua plataforma de cursos, buscando os alunos que estão com boa frequência nas aulas, que entra em contato por chat para sanar dúvidas e avaliação das aulas dadas.
+O cliente visa indicadores e avaliar o uso e gerenciamento de sua plataforma de cursos, buscando os alunos que estão com boa frequência nas aulas, que entra em contato por chat para sanar dúvidas e avaliação das aulas dadas.
 
 Com base nesse briefing, solicita uma plataforma funcional com capacidade analítica, com dashboards, histórico de chat e armazenamento desses dados. Para a realização da análise deverá ter especialmente:
 
