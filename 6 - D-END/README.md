@@ -16,7 +16,41 @@ O objetivo da parceria era o desenvolvimento de uma API que realizasse a anális
 
 ## Contribuições pessoais para o projeto
 Neste projeto atuei especificamente no backend. De início conectei a API  com o banco, e logo depois li o arquivo ".cvs", manipulei o tipo dos dados e os inseri no MongoDB. 
+<details>
+  <summary>Click aqui pra visualizar</summary>
+  
+  ```js
+  @staticmethod
+    def create_connection_db():
+        load_dotenv()
+        try:
+            logger.info('Opening database connection')
+            url_mongodb = os.environ['BANCO_CREDENTIALS']
+            logging.info('Establishing connection')
+            cluster = MongoClient(url_mongodb)
 
+            db = cluster[os.environ['CLUSTER']]
+            logging.info('Get a cluster')
+            return db
+
+        except Exception as e:
+            logger.error('Connection error, bad credentials ')
+            return Exception
+
+    @staticmethod
+    def get_collection_db(bool: bool):
+        try:
+            logger.info('Create a connection')
+            collection = Database_configs.create_connection_db()
+
+            logger.info('Get a collection name')
+            if bool:
+                return collection[os.environ['COLLECTION']]
+            return collection[os.environ['COLLECTION_LOGS']]
+        except Exception as e:
+            logger.error('error while get a collection name')
+  ```
+</details>
 ![image](https://user-images.githubusercontent.com/55815856/201440608-966ce205-6329-49f2-9296-0ceb7c682e6c.png)
 
 Feito isso, precisei criar um arquivo ".log" para armazenar os logs sobre o que estava acontecendo com a API.
