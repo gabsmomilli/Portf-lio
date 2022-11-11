@@ -139,4 +139,4 @@ Fiquei responsável por criar as respectivas camadas e revisar as que meus coleg
 
 **Soft Skills Efetivamente Desenvolvidas:**
 
-Aprendi a compartilhar e dividir task no backend, aprendemos mais sobre a comunicação para todos estarem ciente do desenvolvimentos das sprints, colocando em prática o método scrum com Dailys, Revisão e Passagem de Conhecimento.
+Aprendi a compartilhar e dividir task no backend, aprendemos mais sobre a comunicação e organização como equipe, colocando em prática o método scrum com Dailys, Revisão e Passagem de Conhecimento.

@@ -4,7 +4,7 @@
 
 Neste quinto Projeto Integrador a FATEC trouxe o Cliente "IONIC HEALTH" para que pudéssemos achar uma solução tecnológica para sanar e atender às necessidades do cliente. 
 
-O cliente busca obter indicadores e avaliar o uso e gerenciamento de sua plataforma de cursos, buscando os alunos que estão com boa frequência nas aulas, que entra em contato por chat para sanar dúvidas e avaliação das aulas dadas.
+O cliente visa indicadores e avaliar o uso e gerenciamento de sua plataforma de cursos, buscando os alunos que estão com boa frequência nas aulas, que entra em contato por chat para sanar dúvidas e avaliação das aulas dadas.
 
 Com base nesse briefing, solicita uma plataforma funcional com capacidade analítica, com dashboards, histórico de chat e armazenamento desses dados. Para a realização da análise deverá ter especialmente:
 
@@ -234,14 +234,14 @@ Implementei dois bancos de dados no sistema, sendo um relacional e outro não re
 
 Este foi o Projeto Integrador mais desafiador por ter a equipe reduzida e implementação de varias tecnologias e soluções a serem aplicadas.
 
-Aprimorei os conhecimentos em back-end utilizando um novo metodo orientado pelos professores, e desenvolvi a conexão entre a API e dois bancos diferentes.
+Aprimorei os conhecimentos em back-end utilizando um novo método orientado pelos professores, e desenvolvi a conexão entre a API e dois bancos diferentes.
 
 Através dos conhecimentos compartilhados entre o grupo aprendi sobre a ferramenta ETL;
 
-**Soft Skills Efetivamente Desenvolvidas:**
+Soft Skills Efetivamente Desenvolvidas:
 
 Continuei desenvolvendo e melhorando a comunicação, trabalho em equipe e ajuda mútua;
 
-Tivemos que sair da nossa zona de conforto e buscar novos conhecimentos através de cursos extras e ajuda dos professores para conseguir desenvolver novas features da aplicação em que não tinhamos vivência;
+Tivemos que sair da nossa zona de conforto e buscar novos conhecimentos através de cursos extras e ajuda dos professores para conseguir desenvolver novas features da aplicação em que não tínhamos vivência;
 
 Conseguimos ter a inteligência e resiliência para construir um bom planejamento. O método Scrum nos ajudou a cumprir todas as entregas e sprints do projeto.
