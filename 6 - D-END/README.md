@@ -18,7 +18,7 @@ O objetivo da parceiria era o desenvolvimento de uma API que realizasse a analis
 Neste projeto atuei especificamente no backend. De inicio conecteu a API  com o banco, e logo depois li o arquivo ".cvs", manipulei o tipo dos dados e os inseri no MongoDB. 
 Feito isso, precisei criar um arquivo ".log" para aramzenar os logs sobre o que estava aconetecendo com a API.
 
-![image](https://drive.google.com/file/d/1F4Ja_bJjBYdg5WBmrAtQCvcnznqZXL5N/view?usp=sharing)
+![logs](https://user-images.githubusercontent.com/55815856/201440366-99c54f03-bb9b-4b96-a5e3-f31cc3939389.PNG)
 
 ## Conhecimentos adquiridos
 ### Soft Skills
