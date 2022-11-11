@@ -51,11 +51,51 @@ Neste projeto atuei especificamente no backend. De início conectei a API  com 
             logger.error('error while get a collection name')
   ```
 </details>
-![image](https://user-images.githubusercontent.com/55815856/201440608-966ce205-6329-49f2-9296-0ceb7c682e6c.png)
 
 Feito isso, precisei criar um arquivo ".log" para armazenar os logs sobre o que estava acontecendo com a API.
 
-![logs](https://user-images.githubusercontent.com/55815856/201440366-99c54f03-bb9b-4b96-a5e3-f31cc3939389.PNG)
+<details>
+  <summary>Click aqui pra visualizar</summary>
+  
+  ```js
+      @staticmethod
+    def read_csv():
+        logger.info('read a csv')
+        try:
+            url_csv = ""
+
+            data = pd.read_csv(url_csv, sep=',',
+                            low_memory=False)
+            idFile = data['_id']
+            for id in idFile:
+                logger.info('Get a file id: ' + str(id))
+            return Csv_service.transform_fields(data)
+        except FileNotFoundError as error:
+            logger.info('Error file not found')
+            return error
+        except ValueError as error:
+            logger.error('Parser error during convertion')
+            return error
+
+    @staticmethod
+    def transform_fields(data):
+        columns = pd.DataFrame(data)
+        transform_columns_data = []
+        transform_columns_value = []
+        for col in columns:
+            if 'dt_' in col:
+                transform_columns_data.append(col)
+        for item in transform_columns_data:
+            data[item] = pd.to_datetime(data[item])
+
+        for col in columns:
+            if 'valor' in col: 
+                transform_columns_value.append(col)
+        for item in transform_columns_value:
+            data[item] = data[item].astype('double')
+        return data
+  ```
+</details>
 
 ## Conhecimentos adquiridos
 ### Soft Skills
