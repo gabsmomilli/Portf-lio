@@ -80,22 +80,108 @@ A Ionic Health solicitou uma plataforma funcional com capacidade analítica, com
 
 ### **III - CONTRIBUIÇÕES INDIVIDUAIS**:bow:
 
-Nesse projeto estavámos com uma equipe reduzida perto dos outros grupos da turma, o Projeto Integrador foi o mais desafiador com requisitos complexos e exigindo conhecimentos específicos para compor a aplicação. Com isso, decidimos dividir a equipe deixando os integrantes assumir as tarefas que mais tinham conhecimento para ganharmos tempo e posteriormente dedicarmos em correr atrás das features que não tínhamos habilidades.
+Nesse projeto a equipe em que atuei estava reduzida perto dos demais grupos da turma, o Projeto Integrador foi o mais desafiador com requisitos complexos e exigindo conhecimentos específicos para compor a aplicação. Com isso, decidimos dividir a equipe deixando os integrantes assumir as tarefas que mais tinham conhecimento para ganharmos tempo e posteriormente dedicarmos em correr atrás das features que não tínhamos habilidades.
 
 Portanto, optei por continuar no desenvolvimento do back-end da aplicação criando as entidades e demais camadas do sistema.
 
 Desenvolvi no back-end as classes para integração com o front-end e para o ETL.
 
-![image](https://user-images.githubusercontent.com/61089745/164789664-7ac7c21b-e7b5-47f4-9137-2220ed495ff9.png)
+<details>
+  <summary>Click aqui pra visualizar</summary>  
+  ```js
+  @Entity
+@Table(name = "performance")
+public class Performance {
 
+    @Id
+	@Column(name = "prf_std_id")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 
-Implementei Testes Unitários para cobertura do código e integração com o CI;
+	@Column(name = "prf_course")
+	private String course;
 
-![image](https://user-images.githubusercontent.com/61089745/164792269-6d8a12bf-e999-4915-82d4-63926b337d0e.png)
+	@Column(name = "prf_partial_grade")
+	private Double grade;
+
+	@Column(name = "prf_partial_classes")
+	private Integer parClasses;
+
+	@Column(name = "prf_total_classes")
+	private Integer totClasses;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getCourse() {
+        return course;
+    }
+
+    public void setCourse(String course) {
+        this.course = course;
+    }
+     ```
+</details>
+
+Implementei Testes Unitários para cobertura do código e integração com o CI:
+
+<details>
+  <summary>Click aqui pra visualizar</summary>  
+  ```js
+ @Test
+    void profileRepositorySaveProfileWithLoginOk(){
+
+        Auth auth = new Auth();
+        auth.setPermission("teste12346");
+        authRepository.save(auth);
+
+        Login login = new Login();
+        login.setEmail("login@login.comm");
+        login.setPassword("teste123");
+        login.setAuthorizations(new HashSet<Auth>());
+		login.getAuthorizations().add(auth);
+		loginRepository.save(login);
+
+        Profile profile = new Profile();
+        profile.setLogin(login);
+        profile.setName("Teste");
+        profile.setDoc("111.111.111-11");
+        profile.setGender("Masculino");
+        profile.setBirthday(new Date(1220227200L * 1000));
+        profile.setPhone("(12) 2121-2121");
+        profile.setMobile("(12) 1 2121-2121");
+        profileRepository.save(profile);
+
+        assertNotNull(profile.getId());
+
+    }
+         ```
+</details>
 
 Implementei dois bancos de dados no sistema, sendo um relacional e outro não relacional 
 
-<COLOCAR IMAGEM>
+<details>
+  <summary>Click aqui pra visualizar</summary>  
+  ```js
+    educalytics.datasource.jdbcUrl=jdbc:mysql://localhost:3306/educalytics
+    educalytics.datasource.username=root
+    educalytics.datasource.password=root
+
+    performance.datasource.jdbcUrl=jdbc:mysql://localhost:3306/dw_educalytics
+    performance.datasource.username=root
+    performance.datasource.password=root
+
+    participation.datasource.jdbcUrl=jdbc:mysql://localhost:3306/dw_participation
+    participation.datasource.username=root
+    participation.datasource.password=root
+    }
+         ```
+</details>
 
 
 ### **IV - APRENDIZADOS EFETIVOS**:closed_book:
