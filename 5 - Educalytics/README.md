@@ -50,23 +50,11 @@ A Ionic Health solicitou uma plataforma funcional com capacidade analítica, com
 <details>
   <summary>Click aqui pra visualizar</summary>
   
+  ```js
     ![image](https://user-images.githubusercontent.com/61089745/159184157-6fff7a22-2156-4560-a6f5-bcabda70e1ac.png)
 
+  ```
 </details>
-
-
-### Inovação
-Criamos o 1º BD a partir dos dados considerados necessários, a partir dos requisitos do cliente e da aplicação legado (Skillshare).  Subsequentemente, alteramos o protagonismo para as entidades que envolvem a ligação entre Alunos, Professores e Disciplina.
-Então, estudamos quais ferramentas servirão aos requisitos (não) funcionais:
-
-
-- No FRONTEND - criptografia e token;
-- No BACKEND - arquitetura em oito camadas;
-- No BANCO DE DADOS 01 (RELACIONAL) - Primeira versão com todos os dados necessários (será decomposto);
-- No BANCO DE DADOS 02 (NÃO-RELACIONAL) - Receberá tabelas do BD01, segundo critérios de performance;
-- Distribuição dos BD - Se necessária a clusterização / fragmentação;
-- No DATA WAREHOUSE - Ferramentas de relatório, de ETL no terceiro banco de dados.
-
 
 
 ### **II - TECNOLOGIAS**:iphone:
