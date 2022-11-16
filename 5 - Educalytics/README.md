@@ -2,7 +2,7 @@
 
 ## Introdução
 
-A empresa Ionic Health propôs um desafio acadêmico para os alunos do 5º semestre do curso de Banco de Dados da FATEC-SJC, a fim de estimular o desenvolvimento das matérias do período, os preparando para o mercado de trabalho, e encontrar uma solução tecnologica para sanar e atender às necessidades do cliente. 
+A empresa Ionic Health propôs um desafio acadêmico para os alunos do 5º semestre do curso de Banco de Dados da FATEC-SJC, a fim de estimular o desenvolvimento das matérias do período, os preparando para o mercado de trabalho, e encontrar uma solução tecnológica para sanar e atender às necessidades do cliente. 
 
 ## Proposta
 O objetivo da parceria era o desenvolvimento de uma API que realizasse o desenvolvimento de indicadores e avaliar o uso e gerenciamento de sua plataforma de cursos, buscando os alunos que estão com boa frequência nas aulas, entrar em contato por chat para sanar dúvidas e avaliação das aulas dadas. 
@@ -29,7 +29,7 @@ A Ionic Health solicitou uma plataforma funcional com capacidade analítica, com
 ### Requisitos Funcionais
 
 
-| Functional Requirements                                                 | Reference |
+| Requisitos Funcionais                                                  | Reference |
 |------------------------------------------------------------------------|--------|
 | Dashboard: apresentar dados ao cliente (via backend e banco de dados 01 relacional)        | RF01   | 1          | 1      |
 | Continuous Integration | RF02   | 1          | 4      |
@@ -41,7 +41,7 @@ A Ionic Health solicitou uma plataforma funcional com capacidade analítica, com
 ### Requisitos Não Funcionais
 
 
-| Non-functional Requirements                            | Reference | 
+| Requisitos não funcionais                            | Reference | 
 |------------------------------------------------------|--------|
 | Regras de segurança da informação         | RNF01  |
 | Regras de privacidade              | RNF02  |
@@ -52,11 +52,11 @@ A Ionic Health solicitou uma plataforma funcional com capacidade analítica, com
 
 ## Tecnologias
 
-- Java: É uma linguagem de programação orientada a objetos. Foi utilizado essa linguagem para o desenvolvimento do backend da aplicação.
+- Java: É uma linguagem de programação orientada a objetos. Foi utilizado essa linguagem para o desenvolvimento do back-end da aplicação.
 
-- IntelliJ/Eclipse: Java é uma linguagem de programação orientada a objetos, para desenvolver o backend foi usado os ambientes Eclipse e Intellij para desenvolvimento integrado, escrito em Java. 
+- IntelliJ/Eclipse: Java é uma linguagem de programação orientada a objetos, para desenvolver o back-end foi usado os ambientes Eclipse e Intellij para desenvolvimento integrado, escrito em Java. 
 
-- VS CODE: O Visual Studio Code é um editor de código-fonte desenvolvido pela Microsoft para Windows, Linux e macOS. Foi usado para rodar a aplicação frontend e backend no ambiente de alguns integrantes do grupo.
+- VS CODE: O Visual Studio Code é um editor de código-fonte desenvolvido pela Microsoft para Windows, Linux e macOS. Foi usado para rodar a aplicação frontend e back-end no ambiente de alguns integrantes do grupo.
 
 - JavaScript/NodeJS: JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS. Foi usada essa linguagem para desenvolver o frontend.
 
