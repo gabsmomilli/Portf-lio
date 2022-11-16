@@ -87,7 +87,8 @@ Portanto, optei por continuar no desenvolvimento do back-end da aplicação cria
 Desenvolvi no back-end as classes para integração com o front-end e para o ETL.
 
 <details>
-  <summary>Click aqui pra visualizar</summary>  
+  <summary>Click aqui pra visualizar</summary>
+  
   ```js
   @Entity
 @Table(name = "performance")
@@ -125,15 +126,17 @@ public class Performance {
     public void setCourse(String course) {
         this.course = course;
     }
-     ```
+  ```
 </details>
+
 
 Implementei Testes Unitários para cobertura do código e integração com o CI:
 
 <details>
-  <summary>Click aqui pra visualizar</summary>  
+  <summary>Click aqui pra visualizar</summary>
+  
   ```js
- @Test
+  @Test
     void profileRepositorySaveProfileWithLoginOk(){
 
         Auth auth = new Auth();
@@ -158,15 +161,15 @@ Implementei Testes Unitários para cobertura do código e integração com o CI:
         profileRepository.save(profile);
 
         assertNotNull(profile.getId());
-
-    }
-         ```
+  
+  ```
 </details>
 
 Implementei dois bancos de dados no sistema, sendo um relacional e outro não relacional 
 
 <details>
-  <summary>Click aqui pra visualizar</summary>  
+  <summary>Click aqui pra visualizar</summary>
+  
   ```js
     educalytics.datasource.jdbcUrl=jdbc:mysql://localhost:3306/educalytics
     educalytics.datasource.username=root
@@ -179,25 +182,20 @@ Implementei dois bancos de dados no sistema, sendo um relacional e outro não re
     participation.datasource.jdbcUrl=jdbc:mysql://localhost:3306/dw_participation
     participation.datasource.username=root
     participation.datasource.password=root
-    }
-         ```
+  ```
 </details>
 
+## Aprendizados efetivos
 
-### **IV - APRENDIZADOS EFETIVOS**:closed_book:
+### Hard Skills
 
-**Hard Skills Efetivamente Desenvolvidas:**
+- Gestão de tasks;
+- Implementação de tres bancos no mesmo back-end;
+- Criação e utilização da ferramenta ETL;
+- Desenvolvimento de API em Java, com a framework Spring.
 
-Este foi o Projeto Integrador mais desafiador por ter a equipe reduzida e implementação de varias tecnologias e soluções a serem aplicadas.
-
-Aprimorei os conhecimentos em back-end utilizando um novo método orientado pelos professores, e desenvolvi a conexão entre a API e dois bancos diferentes.
-
-Através dos conhecimentos compartilhados entre o grupo aprendi sobre a ferramenta ETL;
-
-Soft Skills Efetivamente Desenvolvidas:
-
-Continuei desenvolvendo e melhorando a comunicação, trabalho em equipe e ajuda mútua;
-
-Tivemos que sair da nossa zona de conforto e buscar novos conhecimentos através de cursos extras e ajuda dos professores para conseguir desenvolver novas features da aplicação em que não tínhamos vivência;
-
-Conseguimos ter a inteligência e resiliência para construir um bom planejamento. O método Scrum nos ajudou a cumprir todas as entregas e sprints do projeto.
+### Soft Skills
+ 
+- Liderança na equipe de back-end;
+- Proatividade;
+- Trabalho em equipe.

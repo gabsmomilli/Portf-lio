@@ -97,11 +97,15 @@ Feito isso, precisei criar um arquivo ".log" para armazenar os logs sobre o que 
   ```
 </details>
 
-## Conhecimentos adquiridos
-### Soft Skills
-- Gestão de tempo para realizar as tasks definidas; 
+## Aprendizados efetivos
 
 ### Hard Skills
+
 - Manipulação de planilhas com a framework Pandas;
 - Conexão entre back-end Python e banco de dados MongoDB;
-- Criação de aquivos logs com o auxílio da linguagem Python;
+- Criação de aquivos logs com o auxílio da linguagem Python.
+
+### Soft Skills
+
+- Gestão de tempo para realizar as tasks definidas; 
+- Trabalho em equipe.
