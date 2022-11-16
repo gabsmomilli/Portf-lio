@@ -23,7 +23,7 @@ Diagrama de caso de uso:
 
 - Insomnia/POSTMAN: É uma API Client que facilita aos desenvolvedores criar, compartilhar, testar e documentar APIs. Usamos essas API's para testar o backend com as requisições GET, POST, PUT, DELETE e o match entre os candidatos e vagas.
 
-- Git (GitLab): O GitLab é um gerenciador de repositório de software baseado em git, com suporte a Wiki, gerenciamento de tarefas e CI/CD. Guardamos o código do projeto nesse repositório.
+- GitLab: Gerenciador de repositório de software baseado em git, com suporte a Wiki, gerenciamento de tarefas e CI/CD. Guardamos o código do projeto nesse repositório.
 
 - OBS Studio / Kdenlive: É um programa de streaming e gravação gratuito. Foi gravado as telas da aplicação e apresentação usando a ferramenta OBS Studio.
 
@@ -43,14 +43,13 @@ Fiquei responsável por criar as respectivas camadas e revisar as que meus coleg
 
 ![image](https://user-images.githubusercontent.com/61089745/164775826-1cccd9f0-f193-4cd6-b864-38682c7a4365.png)
 
-### **IV - APRENDIZADOS EFETIVOS**:closed_book:
+## Aprendizados efetivos
 
-**Hard Skills Efetivamente Desenvolvidas:**
+### Hard Skills 
 
 - Neste semestre eu apercoei meus conhecimentos em Java.
-- Ensinei e revisei codigo de meus colegas.
-- Tomei a frente e liderei o back-end.
 
-**Soft Skills Efetivamente Desenvolvidas:**
-
-Aprendi a compartilhar e dividir task no backend, aprendemos mais sobre a comunicação e organização como equipe, colocando em prática o método scrum com Dailys, Revisão e Passagem de Conhecimento.
+### Soft Skills
+ - Gestão de tempo
+ - Liderança do back-end;
+ - Autonomia.
