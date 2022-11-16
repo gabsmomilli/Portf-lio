@@ -1,24 +1,25 @@
-## FATEC & IONIC HEALTH - EDUCALYTICS:mortar_board:
+# EDUCALYTICS
 
-### **I - RESUMO DO PROJETO**:page_facing_up: 
+## Introdução
 
-Neste quinto Projeto Integrador a FATEC trouxe o Cliente "IONIC HEALTH" para que pudéssemos achar uma solução tecnológica para sanar e atender às necessidades do cliente. 
+A empresa Ionic Health propôs um desafio acadêmico para os alunos do 5º semestre do curso de Banco de Dados da FATEC-SJC, a fim de estimular o desenvolvimento das matérias do período, os preparando para o mercado de trabalho, e encontrar uma solução tecnologica para sanar e atender às necessidades do cliente. 
 
-O cliente visa indicadores e avaliar o uso e gerenciamento de sua plataforma de cursos, buscando os alunos que estão com boa frequência nas aulas, que entra em contato por chat para sanar dúvidas e avaliação das aulas dadas.
+## Proposta
+O objetivo da parceria era o desenvolvimento de uma API que realizasse o desenvolvimento de indicadores e avaliar o uso e gerenciamento de sua plataforma de cursos, buscando os alunos que estão com boa frequência nas aulas, entrar em contato por chat para sanar dúvidas e avaliação das aulas dadas. 
 
-Com base nesse briefing, solicita uma plataforma funcional com capacidade analítica, com dashboards, histórico de chat e armazenamento desses dados. Para a realização da análise deverá ter especialmente:
+A Ionic Health solicitou uma plataforma funcional com capacidade analítica, com dashboards, histórico de chat e armazenamento desses dados. Para a realização da análise deverá ter especialmente:
 
 
-* Ativação: Quantos usuários ativos (aluno/colaboradores) na plataforma legado;
-* Engajamento: Conhecer o número de usuários, tipos, seu comportamento (matrícula, curso, disciplina, participação);
+* Ativação: quantos usuários ativos (aluno/colaboradores) na plataforma legado;
+* Engajamento: conhecer o número de usuários, tipos, seu comportamento (matrícula, curso, disciplina, participação);
 * Desempenho: qual o aproveitamento do aluno(nota atingida) e do professor (andamento da turma);
-* Participação x taxas de conclusão x desempenho dos alunos/colaboradores;
+* Participação: x taxas de conclusão x desempenho dos alunos/colaboradores;
 * Avaliação de reação: quanto ao conteúdo apresentado, experiência do aluno/colaborador durante o curso;
 * Registro do tempo de participação no curso;
 * Guardar logs e histórico das conversas do chat;
 
 
-#### Requisitos Funcionais
+### Requisitos Funcionais
 
 
 | Functional Requirements                                                 | Reference |
@@ -32,7 +33,7 @@ Com base nesse briefing, solicita uma plataforma funcional com capacidade analí
 
 
 
-#### Requisitos Não Funcionais
+### Requisitos Não Funcionais
 
 
 | Non-functional Requirements                            | Reference | 
@@ -44,119 +45,14 @@ Com base nesse briefing, solicita uma plataforma funcional com capacidade analí
 | Facilidade de Uso | RNF05 |
 
 
-
-### Proposta:
-
-Desenvolver uma aplicação capaz de buscar dados de uma fonte externa, ou seja, uma aplicação legada (chamado Skillshare), para fornecer aos usuários informações suficientes para administrar uma instituição de ensino.
-
-Os dados são produzidos através do uso regular de uma plataforma de e-learning. Assim, um histórico de uso, incluindo interação do usuário via chats e logs do sistema, atribuições, desempenho dos alunos e satisfação do usuário devem ser extraídos, compilados e apresentados aos nossos clientes.
-
-Eventualmente, a Educalytics deve ser capaz de transmitir o comportamento dos usuários de aplicações legados e fornecer à instituição de ensino inteligência suficiente, apoiando seu processo de tomada de decisão.
-
-Seguindo essas premissas listadas acima, a Educalytics apresentará uma GUI por meio de um DASHBOARD com os dados mais importantes do ponto de vista da instituição de ensino.
-
 #### Diagrama de Casos de Uso:
 
-![image](https://user-images.githubusercontent.com/61089745/159184157-6fff7a22-2156-4560-a6f5-bcabda70e1ac.png)
+<details>
+  <summary>Click aqui pra visualizar</summary>
+  
+    ![image](https://user-images.githubusercontent.com/61089745/159184157-6fff7a22-2156-4560-a6f5-bcabda70e1ac.png)
 
-
-#### FEATURES:
-
-1- ARQUITETURA DO EDUCALYTICS
-
-![image](https://user-images.githubusercontent.com/61089745/159179873-f5a8d7c4-46a5-4a91-91a1-e0e801627a9f.png)
-
-2- FRONTEND;
-
-2.1- DASHBOARD (MVP);
-
-![image](https://user-images.githubusercontent.com/61089745/159179889-472655a1-6d5e-42a4-9cb2-eea4712c2dea.png)
-
-2.2- TELA DE LOGIN (COM CRIPTOGRAFIA "bcript");
-
-![image](https://user-images.githubusercontent.com/61089745/159179961-dcf5594d-12dc-478b-b458-35f7781dd083.png)
-
-![image](https://user-images.githubusercontent.com/61089745/159179972-f344d07b-364b-4aed-9f0d-b81657fcc252.png)
-
-
-2.3- SOLICITAÇÃO USANDO TOKEN ÚNICO;
-
-![image](https://user-images.githubusercontent.com/61089745/164943290-850f703d-27b1-4854-b3dd-32f75d35b41d.png)
-
-2.4- INTEGRAÇÃO CONTÍNUA;
-
-![image](https://user-images.githubusercontent.com/61089745/159180157-a0b5818d-0427-46b8-acdc-74a18df75e9c.png)
-
-![image](https://user-images.githubusercontent.com/61089745/159180165-7dd29c0b-2c8b-45b2-8065-21603f725f8c.png)
-
-![image](https://user-images.githubusercontent.com/61089745/159180282-37075ff4-a3e2-4caf-a144-ddcf97ee4a75.png)
-
-![image](https://user-images.githubusercontent.com/61089745/159180717-f73588d8-e928-4b77-bf04-f0061acfe084.png)
-
-
-2.5- APRESENTAÇÃO DOS RESULTADOS DA PARTICIPAÇÃO DOS ALUNOS VIA GRÁFICOS NO PAINEL;
-![image](https://user-images.githubusercontent.com/61089745/159181410-6229d04f-c7df-4b15-8979-61d8e15d9efd.png)
-
-
-2.6- RESULTADOS EM CADA AULA;
-
-![image](https://user-images.githubusercontent.com/61089745/159182151-5df61b9d-3654-4446-8038-e1b2e1abb040.png)
-
-3-  BACKEND - AS 8 CAMADAS (MPConConRVSC).
-
-Model, 
-Payload, 
-Config, 
-Converter, 
-Repository, 
-Validator, 
-Services, 
-Controller.
-
-![image](https://user-images.githubusercontent.com/61089745/159182772-fe3f1484-3eb9-4c07-96d6-aaa1e9545245.png)
-
-3.1- BACKEND - VALIDAÇÃO (usuário e senha).
-
-![image](https://user-images.githubusercontent.com/61089745/159183570-aa8ac41f-46a5-4dac-a5e7-e7f38a69a303.png)
-
-3.2- BACKEND - ACESSO A BANCO DE DADOS
-
-![image](https://user-images.githubusercontent.com/61089745/159183668-f5723b53-0a9a-42ce-9114-4d4a4a87f344.png)
-
-3.3- BACKEND - ETL.
-
-![image](https://user-images.githubusercontent.com/61089745/159183744-7e2c9c21-0b80-4aef-8874-6ec2d75805da.png)
-
-
-3.3.1- BACKEND - ETL TIME DIMENSION.
-
-![image](https://user-images.githubusercontent.com/61089745/159183767-2cab25de-25d6-4c70-a051-04a98087495f.png)
-
-4- BASE DE DADOS DO EDUCALYTICS (RELACIONAL)
-
-4.1- MODELO LÓGICO
-
-![image](https://user-images.githubusercontent.com/61089745/159183917-ca07238a-9570-4461-917f-481f6088cb52.png)
-
-4.2- MODELO DE RELACIONAMENTO DE ENTIDADE
-
-![image](https://user-images.githubusercontent.com/61089745/159183927-84af1794-bd8d-49a8-a4cc-b9727d9109e6.png)
-
-4.3 PARTICIPAÇÃO DO DATAMART - EXTRAÇÃO DE DADOS DO MONGO DB
-
-![image](https://i.ibb.co/ssS7yBm/EXTRACAO-MONGO-DB.png)
-
-
-5- BASE DE DADOS(NÃO RELACIONAL)
-
-![image](https://i.ibb.co/pXyJ1qQ/DATAMART-02-ENGAJAMENTO.png)
-
-5.1- PARTICIPAÇÃO DO DATAMART - COLETA DE MENSAGENS
-
-![image](https://i.ibb.co/NNj5jnf/COLLECTION-MESSAGES.png)
-
-5.2- REGISTRO DE CHAT+LOGS INSERIDO NO MONGO DB CLOUD
-![image](https://i.ibb.co/WxhRFtm/DADOS-DO-CHAT-E-DOS-LOGS.png)
+</details>
 
 
 ### Inovação
