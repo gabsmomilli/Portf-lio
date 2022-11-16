@@ -18,6 +18,13 @@ A Ionic Health solicitou uma plataforma funcional com capacidade analítica, com
 * Registro do tempo de participação no curso;
 * Guardar logs e histórico das conversas do chat;
 
+### Diagrama de Casos de Uso:
+
+<details>
+  <summary>Click aqui pra visualizar</summary>
+  <br>
+   <img style="border-radius: 50%;" src="https://user-images.githubusercontent.com/61089745/159184157-6fff7a22-2156-4560-a6f5-bcabda70e1ac.png" width="500px;" alt=""/>
+</details>
 
 ### Requisitos Funcionais
 
@@ -29,8 +36,6 @@ A Ionic Health solicitou uma plataforma funcional com capacidade analítica, com
 | Tratar Logs| RF03   | 1          | 2      |
 | Tratar Chats   | RF04  | 1          | 3     |
 | Acumular dados históricos tratados e gerar inteligência para o client, via DASHBOARD |RF05	| 1	| 4
-
-
 
 
 ### Requisitos Não Funcionais
@@ -45,16 +50,7 @@ A Ionic Health solicitou uma plataforma funcional com capacidade analítica, com
 | Facilidade de Uso | RNF05 |
 
 
-#### Diagrama de Casos de Uso:
-
-<details>
-  <summary>Click aqui pra visualizar</summary>
-  <br>
-   <img style="border-radius: 50%;" src="https://user-images.githubusercontent.com/61089745/159184157-6fff7a22-2156-4560-a6f5-bcabda70e1ac.png" width="500px;" alt=""/>
-</details>
-
-
-### TECNOLOGIAS
+## Tecnologias
 
 - Java: É uma linguagem de programação orientada a objetos. Foi utilizado essa linguagem para o desenvolvimento do backend da aplicação.
 
@@ -78,8 +74,8 @@ A Ionic Health solicitou uma plataforma funcional com capacidade analítica, com
 
 - OBS Studio/Kdenlive: É um programa de streaming e gravação gratuito. Usada para gravar vídeos das sprints.
 
-### **III - CONTRIBUIÇÕES INDIVIDUAIS**:bow:
-
+## Contribuições individuais
+ 
 Nesse projeto a equipe em que atuei estava reduzida perto dos demais grupos da turma, o Projeto Integrador foi o mais desafiador com requisitos complexos e exigindo conhecimentos específicos para compor a aplicação. Com isso, decidimos dividir a equipe deixando os integrantes assumir as tarefas que mais tinham conhecimento para ganharmos tempo e posteriormente dedicarmos em correr atrás das features que não tínhamos habilidades.
 
 Portanto, optei por continuar no desenvolvimento do back-end da aplicação criando as entidades e demais camadas do sistema.

@@ -14,8 +14,10 @@ O objetivo da parceria era o desenvolvimento de uma API que realizasse a anális
 - Microsoft Azure: serviço de computação em nuvem operado para deploy do Data Warehouse.
 - Jira: ferramenta utilizada para a criação, acompanhamento e priorização de tarefas.
 
-## Contribuições pessoais para o projeto
+## Contribuições individuais 
+
 Neste projeto atuei especificamente no backend. De início conectei a API  com o banco, e logo depois li o arquivo ".cvs", manipulei o tipo dos dados e os inseri no MongoDB. 
+
 <details>
   <summary>Click aqui pra visualizar</summary>
   
