@@ -18,38 +18,6 @@ A Ionic Health solicitou uma plataforma funcional com capacidade analítica, com
 * Registro do tempo de participação no curso;
 * Guardar logs e histórico das conversas do chat;
 
-### Diagrama de Casos de Uso:
-
-<details>
-  <summary>Click aqui pra visualizar</summary>
-  <br>
-   <img style="border-radius: 50%;" src="https://user-images.githubusercontent.com/61089745/159184157-6fff7a22-2156-4560-a6f5-bcabda70e1ac.png" width="500px;" alt=""/>
-</details>
-
-### Requisitos Funcionais
-
-
-| Requisitos Funcionais                                                  | Reference |
-|------------------------------------------------------------------------|--------|
-| Dashboard: apresentar dados ao cliente (via backend e banco de dados 01 relacional)        | RF01   | 1          | 1      |
-| Continuous Integration | RF02   | 1          | 4      |
-| Tratar Logs| RF03   | 1          | 2      |
-| Tratar Chats   | RF04  | 1          | 3     |
-| Acumular dados históricos tratados e gerar inteligência para o client, via DASHBOARD |RF05	| 1	| 4
-
-
-### Requisitos Não Funcionais
-
-
-| Requisitos não funcionais                            | Reference | 
-|------------------------------------------------------|--------|
-| Regras de segurança da informação         | RNF01  |
-| Regras de privacidade              | RNF02  |
-| Documentação | RNF03  |
-| Escalabilidade  | RNF04  |
-| Facilidade de Uso | RNF05 |
-
-
 ## Tecnologias
 
 - Java: É uma linguagem de programação orientada a objetos. Foi utilizado essa linguagem para o desenvolvimento do back-end da aplicação.
