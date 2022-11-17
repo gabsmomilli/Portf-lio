@@ -27,9 +27,11 @@ Atuei no desenvolvimento back-end do projeto, com a linguagem Python, utilizando
 Deve ser importado no inicio da classe, conforme a figura a baixo:
 
 <details>
-  <summary>Click aqui pra visualizar como importar a biblioteca</summary>
-  <br>
-   <img style="border-radius: 50%;" src="https://user-images.githubusercontent.com/55815856/142081595-0be8f770-2b7b-42d1-9b62-60a945e39e26.png" width="500px;" alt=""/>
+  <summary>Click aqui pra visualizar</summary>
+  
+  ```js
+  from bs4 imoprt BeautifulSoup, ResultSet
+  ```
 </details>
 
 Declarar o site que deseja consumir:
@@ -38,8 +40,10 @@ https://www.imdb.com/search/title/?title_type=tv_series&release_date=1980-01-01,
 
 <details>
   <summary>Click aqui pra visualizar</summary>
-  <br>
-   <img style="border-radius: 50%;" src="https://user-images.githubusercontent.com/55815856/141889016-3b3472d9-ccda-4ad0-ba75-1c31019e81ac.PNG" width="500px;" alt=""/>
+  
+  ```js
+  result = requests.get('https://www.imdb](https://www.imdb.com/search/title/?title_type=tv_series&release_date=1980-01-01,2019-12-31&user_rating=,%27%2710.0&count=250')
+  ```
 </details>
 
 Selecionando dados relevantes para API consumir:
