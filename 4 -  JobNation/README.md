@@ -10,11 +10,10 @@ Desenvolver uma API que possibilita a busca de candidatos a partir de uma vaga, 
 Esta API deve realizar a busca por localização: número de conduções para chegar ao local de trabalho; busca por diferentes critérios: rota(s) de pesquisa estão sendo desenhadas para propiciar liberdade de consulta ao BD. Nesse passo, a aplicação varrerá currículos já cadastrados e identificará candidato(s) mais adequados à vaga.
 
 Diagrama de caso de uso:
-
 <details>
-  <summary>Clique aqui pra visualizar</summary>
-    <br>
-        <img style="border-radius: 50%;" src="https://github.com/GabrielSG20/Portfolio/blob/main/images/Model-1.png](https://user-images.githubusercontent.com/61089745/159176256-013d0b24-b377-4d74-a132-cef3b569b13c.png" width="800px;" alt=""/>
+  <summary>Clique aqui para visualizar o Padrão de Projeto Proxy</summary>
+  <br>
+   <img style="border-radius: 50%;" src="https://github.com/GabrielSG20/Portfolio/blob/main/images/Model-1.png](https://user-images.githubusercontent.com/61089745/159176256-013d0b24-b377-4d74-a132-cef3b569b13c.png" width="800px;" alt=""/>
   </details>
 
 ## Tecnologias
