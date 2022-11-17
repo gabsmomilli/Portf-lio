@@ -8,6 +8,10 @@ Como uma tentativa de introduzir melhor os alunos em problemas atuais do mercado
 
 A proposta do projeto é a de que um grupo de alunos desenvolva uma aplicação utilizando a solução web bot, para resolver o problema proposto pelo próprio grupo. A técnica proposta é "raspagem de dados", dado como um processo de operar uma aplicação para extrair dados valiosos de uma fonte, para utilizá-los a seu favor. Raspagem de conteúdo pode ser então "replicada" ou manipulada conforme o necessário.
 
+## Contribuições individuais
+
+Atuei no desenvolvimento back-end do projeto, com a linguagem Python, utilizando o pacote pacote Beautiful Soup para extração e raspagem de dados. Após extrair os dados, alguns deles precisaram ser tratados e imputados no banco de dados CouchDB. Para serem apresentados no front-end do projeto, utilizei a framework Flask para disponibiliza-los.
+
 ## Tecnologias 
 
 - Python: Linguagem de programação, desenvolvida para ser simples, fácil de aprender e versátil, logo, para ser utilizá-la em diversas atividades. Utilizada na conexao do banco de dados CouchDB, na raspagem de dados e tratativa dos mesmos.
@@ -19,10 +23,6 @@ A proposta do projeto é a de que um grupo de alunos desenvolva uma aplicação 
 - CouchDB: Banco de dados NoSQL orientado a documentos. Utiliza JSON como formato de dados e JavaScript como linguagem de consulta. Diferente da maioria dos outros bancos de dados, seu conteúdo é acessado e modificado através de uma API REST.
 
 - Javacript: Linguagem de programação que permite a criação de conteúdos que se atualizam dinamicamente, controla multimídias, imagens animadas, pesquisas por filtros, entre outros.
-
-## Contribuições individuais
-
-Atuei no desenvolvimento back-end do projeto, com a linguagem Python, utilizando o pacote pacote Beautiful Soup para extração e raspagem de dados. Após extrair os dados, alguns deles precisaram ser tratados e imputados no banco de dados CouchDB. Para serem apresentados no front-end do projeto, utilizei a framework Flask para disponibiliza-los.
 
 ## Aprendizados efetivos
 
