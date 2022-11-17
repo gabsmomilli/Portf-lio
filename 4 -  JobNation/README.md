@@ -11,7 +11,13 @@ Esta API deve realizar a busca por localização: número de conduções para ch
 
 Diagrama de caso de uso:
 <details>
-  <summary>Clique aqui para visualizar o Padrão de Projeto Proxy</summary>
+  <summary>Click aqui pra visualizar</summary>
+  <br>
+   <img style="border-radius: 50%;" src="https://user-images.githubusercontent.com/61089745/159184157-6fff7a22-2156-4560-a6f5-bcabda70e1ac.png" width="500px;" alt=""/>
+</details>
+
+<details>
+  <summary>Clique aqui para visualizar</summary>
   <br>
    <img style="border-radius: 50%;" src="https://github.com/GabrielSG20/Portfolio/blob/main/images/Model-1.png](https://user-images.githubusercontent.com/61089745/159176256-013d0b24-b377-4d74-a132-cef3b569b13c.png" width="800px;" alt=""/>
   </details>
