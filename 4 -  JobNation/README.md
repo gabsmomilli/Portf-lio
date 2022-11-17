@@ -9,19 +9,6 @@ Desenvolver uma API que possibilita a busca de candidatos a partir de uma vaga, 
 
 Esta API deve realizar a busca por localização: número de conduções para chegar ao local de trabalho; busca por diferentes critérios: rota(s) de pesquisa estão sendo desenhadas para propiciar liberdade de consulta ao BD. Nesse passo, a aplicação varrerá currículos já cadastrados e identificará candidato(s) mais adequados à vaga.
 
-Diagrama de caso de uso:
-<details>
-  <summary>Click aqui pra visualizar</summary>
-  <br>
-   <img style="border-radius: 50%;" src="https://user-images.githubusercontent.com/61089745/159184157-6fff7a22-2156-4560-a6f5-bcabda70e1ac.png" width="500px;" alt=""/>
-</details>
-
-<details>
-  <summary>Clique aqui para visualizar</summary>
-  <br>
-   <img style="border-radius: 50%;" src="https://github.com/GabrielSG20/Portfolio/blob/main/images/Model-1.png](https://user-images.githubusercontent.com/61089745/159176256-013d0b24-b377-4d74-a132-cef3b569b13c.png" width="800px;" alt=""/>
-  </details>
-
 ## Tecnologias
 
 - Oracle 11g (Sql developer): É um banco de dados popular e relacional, foi usado para criar PROCEDURE PL/SQL: Consulta de candidatos por distância (LAT,LONG); PROCEDURE  de devolução de listas por Múltiplos  Critérios com CURSOR; População do BD com dados fictícios para teste de PERFORMANCE;
@@ -44,13 +31,20 @@ Nesse projeto como o foco era o backend e banco de dados não era um requisito t
 
 Sendo a integrante do grupo com mais conhecimento em Java juntod da framework Spring, dei inicio ao projeto e ensinei aos colegas a desenvolver o mesmo. Com isso, demostrei como utilizo 9 camadas para desenvolvimento das entidades das quais foram definidas.
 
-![image](https://user-images.githubusercontent.com/61089745/164765729-75257564-823f-4901-8cb2-55be55c0759c.png)
+<details>
+  <summary>Click aqui pra visualizar</summary>
+  <br>
+   <img style="border-radius: 50%;" src="https://user-images.githubusercontent.com/61089745/164765729-75257564-823f-4901-8cb2-55be55c0759c.png" width="500px;" alt=""/>
+</details>
 
  O metodo que eu utilizo chama (MPConConRVS) Model, Payload, Converter, Repository, Validator, Services, Controller.
 
 Fiquei responsável por criar as respectivas camadas e revisar as que meus colegas fizeram.
-
-![image](https://user-images.githubusercontent.com/61089745/164775826-1cccd9f0-f193-4cd6-b864-38682c7a4365.png)
+<details>
+  <summary>Click aqui pra visualizar</summary>
+  <br>
+   <img style="border-radius: 50%;" src="https://user-images.githubusercontent.com/61089745/164775826-1cccd9f0-f193-4cd6-b864-38682c7a4365.png" width="500px;" alt=""/>
+</details>
 
 ## Aprendizados efetivos
 
