@@ -48,9 +48,7 @@ https://www.imdb.com/search/title/?title_type=tv_series&release_date=1980-01-01,
 
 Selecionando dados relevantes para API consumir:
 
-- Coleta de dados específicos:
-
-    - Visualização através do browser: 
+Visualização através do browser: 
     
     Botão direito do mouse -> Inspecionar -> Elementos
     
@@ -60,32 +58,33 @@ Selecionando dados relevantes para API consumir:
    <img style="border-radius: 50%;" src="https://user-images.githubusercontent.com/55815856/141889579-7efcc2a8-58ef-470e-9838-3af923fbce9c.png" width="500px;" alt=""/>
 </details>
  
-    - Como os dados são "capturados" pelo pacote Beautiful Soup:
+ Como os dados são "capturados" pelo pacote Beautiful Soup:
     
-    Utilizando a visualização fornecida pelo browser, pode-se ver o caminho para submeter tal dado.
+ Utilizando a visualização fornecida pelo browser, pode-se ver o caminho para submeter tal dado.
     
     ![puxando dados necessarios](https://user-images.githubusercontent.com/55815856/141889757-f9f27295-51e1-454f-a92d-f112f4c435f9.PNG)
 
 Foram encontradas dificuldades em paginar devido a diferença entre URL e quantidade apresentada; raspar outros sites também foi um impedimento pois não foi apresentado métodos ágeis de realizar tal processo. Por fim foi decidido manter um único site com uma única pagina sendo consumida.
 
 Após extrair os dados, resolvido que os dados deveriam ter as seguintes modificações:
-
-    - O caractere apóstrofo deveria ser retirado dos títulos;
-   
-    - As notas deveriam ser números quebrados;
-    
-    - Alguns gêneros tinham erro de escrita com "/n", então deveriam ser retirados;
-    
-    - Caracteres como números romanos, parêntese aperto e fechado, sinal meia-risca deveria ser retirados das datas de lançamento;
-    
-    - Deveriam ser mantidos somente o ano de lançamento, ignorando o ano em que a serie encerou.
+- O caractere apóstrofo deveria ser retirado dos títulos;
+- As notas deveriam ser números quebrados;
+- Alguns gêneros tinham erro de escrita com "/n", então deveriam ser retirados;
+- Caracteres como números romanos, parêntese aperto e fechado, sinal meia-risca deveria ser retirados das datas de lançamento;
+- Deveriam ser mantidos somente o ano de lançamento, ignorando o ano em que a serie encerou.
         Exemplo: (2007-2012) -> 2007
 
 Foram estudadas as possibilidades de local e como efetuar o armazenamento os dados raspados, até que fosse concluída como melhor ideia a utilização de um banco de dados não relacional, pois não havia uma massa de granularidade dentre os dados. O CouchDB foi indicado por alunos mais experientes da mesma faculdade. Para dispor do banco de dados, é necessário declarar o login e senha código em Python para autenticação.
 
-- Como autenticar no CouchDB:
+Autenticando no CouchDB:
 
-![login couchdb](https://user-images.githubusercontent.com/55815856/141023643-b801c2e9-99aa-4a64-a266-1d41c992f9ba.PNG)
+<details>
+  <summary>Click aqui pra visualizar</summary>
+  
+  ```js
+  auth = ('couchdb', 'couchdb')
+  ```
+</details>
 
 
 - Json no banco de dados:
