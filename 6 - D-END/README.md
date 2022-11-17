@@ -6,14 +6,6 @@ A empresa Dom Rock propôs um desafio acadêmico para os alunos do 6º semestre 
 ## Proposta 
 O objetivo da parceria era o desenvolvimento de uma API que realizasse a análise dos dados de duas bases, sendo seus clientes PF e operadora de convênio de saúde; para conciliar os registros e identificar débitos técnicos entre as contas, alem de auxiliar na criação de um plano de ação para evitar futuras inconsistências.
 
-## Tecnologias utilizadas
-- Python: linguagem de programação definida por ser melhor em análise de dados. Utilizada na conexão com o banco, manipulação de planilhas e criação de arquivos logs. 
-- MongoDB: banco de dados não relacional, orientado a documentos. Utilizado para o armazenamento de dados vindos de arquivos ".csv". Banco utilizado com a Aggregation Framework para desenvolver a lógica que identifica inconsistências nos dados providos entre cliente e empresa.
-- SQL Server: sistema gerenciador de Banco de dados relacional, onde foram realizados os scripts SQL para prototipação das colunas e tabelas que provem o Data Warehouse.
-- Power BI:serviço de análise de negócios e análise de dados. Utilizado durante o projeto para o consumo do Data Warehouse, gerando gráficos e métricas das análises realizadas.
-- Microsoft Azure: serviço de computação em nuvem operado para deploy do Data Warehouse.
-- Jira: ferramenta utilizada para a criação, acompanhamento e priorização de tarefas.
-
 ## Contribuições individuais 
 
 Neste projeto atuei especificamente no backend. De início conectei a API  com o banco, e logo depois li o arquivo ".cvs", manipulei o tipo dos dados e os inseri no MongoDB. 
@@ -98,6 +90,19 @@ Feito isso, precisei criar um arquivo ".log" para armazenar os logs sobre o que 
         return data
   ```
 </details>
+
+## Tecnologias utilizadas
+- Python: linguagem de programação definida por ser melhor em análise de dados. Utilizada na conexão com o banco, manipulação de planilhas e criação de arquivos logs. 
+
+- MongoDB: banco de dados não relacional, orientado a documentos. Utilizado para o armazenamento de dados vindos de arquivos ".csv". Banco utilizado com a Aggregation Framework para desenvolver a lógica que identifica inconsistências nos dados providos entre cliente e empresa.
+
+- SQL Server: sistema gerenciador de Banco de dados relacional, onde foram realizados os scripts SQL para prototipação das colunas e tabelas que provem o Data Warehouse.
+
+- Power BI:serviço de análise de negócios e análise de dados. Utilizado durante o projeto para o consumo do Data Warehouse, gerando gráficos e métricas das análises realizadas.
+
+- Microsoft Azure: serviço de computação em nuvem operado para deploy do Data Warehouse.
+
+- Jira: ferramenta utilizada para a criação, acompanhamento e priorização de tarefas.
 
 ## Aprendizados efetivos
 
