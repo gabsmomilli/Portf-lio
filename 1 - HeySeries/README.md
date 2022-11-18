@@ -10,7 +10,7 @@ A proposta do projeto é a de que um grupo de alunos desenvolva uma aplicação 
 
 ## Contribuições individuais
 
-Atuei no desenvolvimento back-end do projeto, com a linguagem Python, utilizando o pacote Beautiful Soup para extração e raspagem de dados. Após extrair os dados, alguns deles precisaram ser tratados e imputados no banco de dados CouchDB. Para serem apresentados no front-end do projeto, utilizei a framework Flask para  disponibilizá-los.
+Atuei no desenvolvimento back-end do projeto, com a linguagem Python, utilizando o pacote Beautiful Soup para extração e raspagem de dados. Após extrair os dados, alguns deles precisaram ser tratados e imputados no banco de dados CouchDB. Para serem apresentados no front-end do projeto, utilizei a framework Flask para disponibilizá-los.
 
 ## Tecnologias 
 
