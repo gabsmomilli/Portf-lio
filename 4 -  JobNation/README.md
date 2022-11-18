@@ -2,18 +2,19 @@
 
 ## Introdução
 
-A parceiria da FATEC junto a empresa JET SOFT, porpocionou aos alunos do 4° semestre do curso de Banco de Dados, o desafio onde eles deveriam apresentar uma solução tecnológica para sanar e atender às necessidades do mesmo. 
+A parceira da FATEC junto a empresa JET SOFT, proporcionou aos alunos do 4° semestre do curso de Banco de Dados, o desafio onde eles deveriam apresentar uma solução tecnológica para sanar e atender às necessidades do mesmo. 
     
 ## Proposta:
+
 Desenvolver uma API que possibilita a busca de candidatos a partir de uma vaga, buscando uma contratação veloz e assertiva. Dentre os critérios, deverão ser destaques a segurança e o desempenho da aplicação.
 
 Esta API deve realizar a busca por localização: número de conduções para chegar ao local de trabalho; busca por diferentes critérios: rota(s) de pesquisa estão sendo desenhadas para propiciar liberdade de consulta ao BD. Nesse passo, a aplicação varrerá currículos já cadastrados e identificará candidato(s) mais adequados à vaga.
 
 ## Contribuições individuais 
 
-Nesse projeto como o foco era o backend e banco de dados não era um requisito ter frontend na aplicação, portanto nas divisões de tasks na equipe escolhi contribuir como de costume a aplicação, ajudando a desenvolver o backend.
+Nesse projeto como o foco era o back-end e banco de dados não era um requisito ter frontend na aplicação, portanto nas divisões de tasks na equipe escolhi contribuir como de costume a aplicação, ajudando a desenvolver o backend.
 
-Sendo a integrante do grupo com mais conhecimento em Java juntod da framework Spring, dei inicio ao projeto e ensinei aos colegas a desenvolver o mesmo. Com isso, demostrei como utilizo 9 camadas para desenvolvimento das entidades das quais foram definidas.
+Sendo a integrante do grupo com mais conhecimento em Java junto da framework Spring, dei inicio ao projeto e ensinei aos colegas a desenvolver o mesmo. Com isso, demostrei como utilizo 9 camadas para desenvolvimento das entidades das quais foram definidas.
 
 <details>
   <summary>Click aqui pra visualizar</summary>
@@ -34,11 +35,11 @@ Fiquei responsável por criar as respectivas camadas e revisar as que meus coleg
 
 - Oracle 11g (Sql developer): É um banco de dados popular e relacional, foi usado para criar PROCEDURE PL/SQL: Consulta de candidatos por distância (LAT,LONG); PROCEDURE  de devolução de listas por Múltiplos  Critérios com CURSOR; População do BD com dados fictícios para teste de PERFORMANCE;
 
-- Java (IntelliJ / Eclipse): Java é uma linguagem de programação orientada a objetos, para desenvolver o backend foi usado os ambientes Eclipse e Intellij para desenvolvimento integrado, escrito em Java. 
+- Java (IntelliJ / Eclipse): Java é uma linguagem de programação orientada a objetos, para desenvolver o back-end foi usado os ambientes Eclipse e Intellij para desenvolvimento integrado, escrito em Java. 
 
 - Javascript (Node-JS): JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível. Foi utilizada essa linguagem para fazer a aplicação consumir os dados da API do Google Maps.
 
-- Insomnia/POSTMAN: É uma API Client que facilita aos desenvolvedores criar, compartilhar, testar e documentar APIs. Usamos essas API's para testar o backend com as requisições GET, POST, PUT, DELETE e o match entre os candidatos e vagas.
+- Insomnia/POSTMAN:  É uma API Client que facilita aos desenvolvedores criar, compartilhar, testar e documentar APIs. Usamos essas API's para testar o back-end com as requisições GET, POST, PUT, DELETE e o match entre os candidatos e vagas.
 
 - GitLab: Gerenciador de repositório de software baseado em git, com suporte a Wiki, gerenciamento de tarefas e CI/CD. Guardamos o código do projeto nesse repositório.
 
