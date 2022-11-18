@@ -2,7 +2,7 @@
 
 ## Introdução
 
-A FATEC junto com a empresa Necto System, propuseram para os alunos o desafio da criação de um software que visa estimular o desenvolvimento e mais ativamente a interaçao com as materias do 2º semetre de Banco de Dados da FATEC de São José dos Campos.
+A FATEC com a empresa Necto System, propuseram para os alunos o desafio da criação de um software que visa estimular o desenvolvimento e mais ativamente a interação com as matérias do 2º semestre de Banco de Dados da FATEC de São José dos Campos.
 
 ## Proposta
 
@@ -10,14 +10,14 @@ A proposta do projeto é a de que um grupo de alunos desenvolva uma aplicação 
  
 ## Contribuições individuais 
 
-Neste projeto a quipe estava com equipe reduzida, deixando somente eu com o back-end para desenvolver. Dei inicio aos meus estudos com a linguagem Java utilizando a framework Spring Boot. Crei a conexão do nosso banco de dados MySQL, e após a definição de como seria o nosso modelo de banco de dados, criei as models referente as entidades, em seguida iniciei o desenvolvimento das camadas necessarias, sendo elas: repository, service e controller.
+Neste projeto a equipe estava com equipe reduzida, deixando somente eu com o back-end para desenvolver. Dei inicio aos meus estudos com a linguagem Java utilizando a framework Spring Boot.  Realizei a conexão do nosso banco de dados MySQL, e após a definição de como seria o nosso modelo de banco de dados, criei as models referente as entidades, em seguida iniciei o desenvolvimento das camadas necessárias, sendo elas: repository, service e controller.
 
 Na camada de repository ministrei a ligação a determinada classe do Model com possibilidade de persistir no banco de dados. Defini as Querys em um padrão diferenciado para caso mudasse o banco para Oracle, por exemplo, não teria de ser reformulado muitas linhas de código além do POM com as dependências do novo banco e no APPLICATION com as definições de conexão.
-Ja no service é onde se encontra as regras de negócio, validações e o que mais for preciso. No caso do Darwing, nesta camada que foi criada as validações, como:
+Já no service é onde se encontra as regras de negócio, validações e o que mais for preciso. No caso do Darwing, nesta camada que foi criada as validações, como:
         - se haviam campos nulos;
         - se o desenvolvedor já não estava cadastrado;
         - carga horaria maior que 0 horas. 
-O controller é a classe responsável pela preparação de um modelo de Map com dados a serem exibidos pela view e pela escolha da view correta. Basicamente ele é o responsável por controlar as requisições indicando quem deve receber as requisições para quem deve respondê-las. Entregando então pra determinada barra (/tarefa) o que é requisitado como método de requisição HTTP.
+O controller é a classe responsável pela preparação de um modelo de Map com dados a serem exibidos pela view e pela escolha da view correta. Basicamente ele é o responsável por controlar as requisições indicando quem deve receber as requisições para quem deve respondê-las. Entregando então para determinada barra (/tarefa) o que é requisitado como método de requisição HTTP.
 
 ## Tecnologias 
 
