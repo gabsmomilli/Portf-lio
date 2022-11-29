@@ -6,7 +6,7 @@ No 3º periodo do curso de Banco de dados da FATEC de São José dos Campos se a
 
 ## Proposta
 
-No 3º período do curso de Banco de dados da FATEC de São José dos Campos se aliou a empresa SPC para propor um problema a ser solucionado pelos alunos do semestre.
+O objetivo é que o usuário da plataforma possa analisar sua vida financeira baseada em dados que englobam o passado, presente e futuro de sua vida financeira.
 
 ## Contribuições individuais
 
