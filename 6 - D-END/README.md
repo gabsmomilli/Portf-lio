@@ -4,7 +4,7 @@
 A empresa Dom Rock propôs um desafio acadêmico para os alunos do 6º semestre do curso de Banco de Dados da FATEC-SJC, a fim de estimular o desenvolvimento das matérias do período, os preparando para o mercado de trabalho.
 
 ## Proposta 
-O objetivo da parceria era o desenvolvimento de uma API que realizasse a análise dos dados de duas bases, sendo seus clientes PF e operadora de convênio de saúde; para conciliar os registros e identificar débitos técnicos entre as contas, alem de auxiliar na criação de um plano de ação para evitar futuras inconsistências.
+O objetivo da parceria era o desenvolvimento de uma API que realizasse a análise dos dados de duas bases, sendo seus clientes pessoa fisica e operadora de convênio de saúde; para conciliar os registros e identificar débitos técnicos entre as contas, e auxiliando na criação de um plano de ação para evitar futuras inconsistências.
 
 ## Contribuições individuais 
 
