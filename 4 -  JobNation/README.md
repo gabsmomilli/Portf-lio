@@ -52,6 +52,7 @@ Fiquei responsável por criar as respectivas camadas e revisar as que meus coleg
 ### Hard Skills 
 
 - Neste semestre eu aperfeiçoei meus conhecimentos em Java.
+- Iniciei meus estudos com arquitetura branching
 
 ### Soft Skills
  - Gestão de tempo
