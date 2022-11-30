@@ -2,10 +2,10 @@
 
 ## Introdução
 
-A empresa Ionic Health propôs um desafio acadêmico para os alunos do 5º semestre do curso de Banco de Dados da FATEC-SJC, a fim de estimular o desenvolvimento das matérias do período, os preparando para o mercado de trabalho, e encontrar uma solução tecnológica para sanar e atender às necessidades do cliente. 
+A empresa Ionic Health propôs um desafio acadêmico para os alunos do 5º semestre do curso de Banco de Dados da FATEC-SJC, a fim de estimular o desenvolvimento do período, preparando para o mercado de trabalho, e encontrar uma solução tecnológica para sanar e atender às necessidades do cliente. 
 
 ## Proposta
-O objetivo da parceria era o desenvolvimento de uma API que realizasse o desenvolvimento de indicadores e avaliar o uso e gerenciamento de sua plataforma de cursos, buscando os alunos que estão com boa frequência nas aulas, entrar em contato por chat para sanar dúvidas e avaliação das aulas dadas. 
+O objetivo da parceria era o desenvolvimento de indicadores e avaliar o uso e gerenciamento de sua plataforma de cursos, buscando os alunos que estão com boa frequência nas aulas, entrar em contato por chat para sanar dúvidas e avaliar as aulas dadas. 
 
 A Ionic Health solicitou uma plataforma funcional com capacidade analítica, com dashboards, histórico de chat e armazenamento desses dados. Para a realização da análise deverá ter especialmente:
 
@@ -20,7 +20,7 @@ A Ionic Health solicitou uma plataforma funcional com capacidade analítica, com
 
 ## Contribuições individuais
  
-Nesse projeto a equipe em que atuei estava reduzida perto dos demais grupos da turma, o Projeto Integrador foi o mais desafiador com requisitos complexos e exigindo conhecimentos específicos para compor a aplicação. Com isso, decidimos dividir a equipe deixando os integrantes assumir as tarefas que mais tinham conhecimento para ganharmos tempo e posteriormente dedicarmos em correr atrás das features que não tínhamos habilidades.
+Nesse projeto a equipe em que atuei estava reduzida perto dos demais grupos da turma, o Projeto Integrador foi o mais desafiador com requisitos complexos e exigindo conhecimentos específicos para compor a aplicação. Com isso, dividimos a equipe deixando os integrantes assumir as tarefas que mais tinham conhecimento para ganharmos tempo e posteriormente dedicarmos em correr atrás das features que não tínhamos habilidades.
 
 Portanto, optei por continuar no desenvolvimento do back-end da aplicação criando as entidades e demais camadas do sistema.
 
@@ -129,21 +129,19 @@ Implementei dois bancos de dados no sistema, sendo um relacional e outro não re
 
 - Java: É uma linguagem de programação orientada a objetos. Foi utilizado essa linguagem para o desenvolvimento do back-end da aplicação.
 
-- IntelliJ/Eclipse: Java é uma linguagem de programação orientada a objetos, para desenvolver o back-end foi usado os ambientes Eclipse e Intellij para desenvolvimento integrado, escrito em Java. 
-
 - VS CODE: O Visual Studio Code é um editor de código-fonte desenvolvido pela Microsoft para Windows, Linux e macOS. Foi usado para rodar a aplicação frontend e back-end no ambiente de alguns integrantes do grupo.
 
-- JavaScript/NodeJS: JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS. Foi usada essa linguagem para desenvolver o frontend.
+- JavaScript/NodeJS: É uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS. Foi usada para desenvolver o frontend.
 
-- MicrosoftSQLServer: O Microsoft SQL Server é um sistema gerenciador de Banco de dados relacional desenvolvido pela Sybase em parceria com a Microsoft. Foi usado para o desenvolvimento do ETL.
+- MicrosoftSQLServer: Sistema gerenciador de Banco de dados relacional desenvolvido pela Sybase em parceria com a Microsoft. Foi usado para o desenvolvimento do ETL.
 
 - MySQL: O MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL como interface. Foi usado para o desenvolvimento do banco relacional da aplicação.
 
-- React: O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.
+- React: É uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.
 
 - Insomnia/Postman: É um API Client que facilita aos desenvolvedores criar, compartilhar, testar e documentar APIs. Utizada para testar o GET, PUT, POST e DELETE das classes controllers da aplicação.
 
-- GitLab/GitFlow: O GitLab é um gerenciador de repositório de software baseado em git, com suporte a Wiki, gerenciamento de tarefas e CI/CD. Foi usado para armazenar o código do projeto e desenvolver o CI/CD GitFLow da aplicação.
+- GitLab/GitFlow: Gerenciador de repositório de software baseado em git, com suporte a Wiki, gerenciamento de tarefas e CI/CD, para armazenar o código do projeto e desenvolver o CI/CD GitFLow da aplicação.
 
 - MongoDB: É um software de banco de dados orientado a documentos. Foi usado para armazenar os logs do chat da aplicação legada no banco não relacional.
 
