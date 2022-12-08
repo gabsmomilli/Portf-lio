@@ -12,7 +12,7 @@
   
   <table align="center">
    <tr>
-    <td align="center"><a href=https://www.linkedin.com/in/gabriela-momilli-105b1a184/"><img style="border-radius: 50%;" src="https://github.com/gabsmomilli/Portfolio/55815856.jpg" width="200px;" alt=""/><br/><b>Gabriela Momilli</b></a>
+    <td align="center"><a href=https://www.linkedin.com/in/gabriela-momilli-105b1a184/"><img style="border-radius: 50%;" src="https://github.com/gabsmomilli/Portfolio/blob/main/55815856.jpg" width="200px;" alt=""/><br/><b>Gabriela Momilli</b></a>
       <br/>
       Back-end Developer
      </td>
