@@ -34,8 +34,8 @@ Neste projeto permaneci no desenvolvimento do back-end. Aprimorei meus conhecime
 
 ### Soft Skills
 
-- Autonomia;
-- Metodologia Ágil;
-- Comunicação;
-- Liderança;
-- Scrum.
+- Autonomia: como já conhecia um pouco sobre as tecnologias que utilizamos, não tive grandes dificuldades;
+- Metodologia Ágil: precisei ser mais assertiva na priorização das minhas tarefas;
+- Comunicação: tive de participar de reuniões diárias (dailys) para o acompanhamento das tarefas;
+- Liderança: com a equipe reduzida, precisei tomar a frente para realizar as tarefas do back-end sozinha;
+- Scrum: além de participar como desenvolvedora neste projeto, também tomei a frente para assumir o papel de Product Owner.
