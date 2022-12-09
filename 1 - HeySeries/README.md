@@ -36,7 +36,7 @@ Atuei no desenvolvimento back-end do projeto, com a linguagem Python, utilizando
 - Metodologia Scrum.
 
 ### Soft Skills
-- Autonomia;
-- Flexibilidade;
-- Trabalho em equipe;
-- Comunicação.
+- Autonomia: neste primeiro projeto eu estava iniciando meus estudos com programação, então tive que aprender a pesquisar sobre as tecnologias e logicas que iria aplicar;
+- Flexibilidade: como era tudo novo para mim, precisava testar várias soluções e mesclando elas afim de obter o melhor resultado;
+- Trabalho em equipe: para utilizar as 3 partes do projeto (backend, front e banco) precisamos trabalhar em conjunto para conseguir realizar uma conexão mais assertiva;
+- Comunicação: para entender e realizar o projeto, tive de tirar muitas dúvidas com os professores e discutir ideias com meus colegas.
