@@ -12,14 +12,34 @@
   
   <table align="center">
    <tr>
-    <td align="center"><a href=https://www.linkedin.com/in/gabriela-momilli-105b1a184/"><img style="border-radius: 50%;" src="https://github.com/gabsmomilli/Portfolio/blob/main/55815856.jpg" width="200px;" alt=""/><br/><b>Gabriela Momilli</b></a>
+    <td align="center"><img style="border-radius: 50%;" src="https://github.com/gabsmomilli/Portfolio/blob/main/55815856.jpg" width="200px;" alt=""/><br/><b>Gabriela Momilli</b></a>
       <br/>
       Back-end Developer
      </td>
    </tr>
   </table>
   
+---
 
+<h2> Meus Principais Conhecimentos</h2>
+<ul>
+    <li>Java na criação de API's (Application Programming Interface) Rest utilizando o Framework SpringBoot;</li>
+    <li>Python para automação de processos e manipulação de documentos como csv/</code>;</li>
+    <li><code>SQL</code> para modelagem, criação e manipulação de Banco de Dados Oracle e MySQL.</li>
+    </ul></li>
+  <br>
+  </ul>
+
+---
+
+ <h2 align="center"> Meus Projetos</h2>
+ 
+   <p align="justify" style="font-family:roboto;"><li><a href="https://github.com/gabsmomilli/portfolio/tree/main/1%20-%20HeySeries"> 1º Semestre: HeySeries - WebBot para indicações de series a partir de notas e generos</a></li></p>
+   <p align="justify" style="font-family:roboto;"><li><a href="https://github.com/gabsmomilli/portfolio/tree/main/2%20-%20Darwing"> 2º Semestre: Darwing - aplicação administrativa de afazeres, sendo para uma única pessoa ou até mesmo para uma empresa</a></li></p>
+   <p align="justify" style="font-family:roboto;"><li><a href="https://github.com/gabsmomilli/portfolio/tree/main/3%20-%20SPC"> 3° Semestre: SPC BRASIL - Plataforma de analise financeira</a></li></p>
+   <p align="justify" style="font-family:roboto;"><li><a href="https://github.com/gabsmomilli/portfolio/tree/main/4%20-%20%20JobNation"> 4° Semestre: Jobnation - API que possibilita a busca de candidatos a partir de uma vaga, buscando uma contratação veloz e assertiva</a></li></p>
+   <p align="justify" style="font-family:roboto;"><li><a href="https://github.com/gabsmomilli/portfolio/tree/main/5%20-%20Educalytics"> 5º Semestre: Educalytics - plataforma funcional com capacidade analítica, com dashboards</a></li></p>
+   <p align="justify" style="font-family:roboto;"><li><a href="https://github.com/gabsmomilli/portfolio/tree/main/6%20-%20D-END"> 6º Semestre: D-end - Processamento e análise de dados para tratamento de inconsistências</a></li></p>
 
 
 </body>
