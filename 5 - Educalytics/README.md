@@ -158,6 +158,6 @@ Implementei dois bancos de dados no sistema, sendo um relacional e outro não re
 
 ### Soft Skills
  
-- Liderança na equipe de back-end;
-- Proatividade;
-- Trabalho em equipe.
+- Liderança na equipe de back-end: como era o membro da equipe que mais tinha conhecimentos sobre Java com Spring, os liderei;
+- Proatividade: este projeto foi um pouco maior do que os outros, sendo assim, tomei a frente pra realizar algumas tarefas que ainda não tinham sido determinadas para um membro especifico do grupo;
+- Trabalho em equipe: revisei o código de meus colegas e os ajudei a realizar suas tarefas.
