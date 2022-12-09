@@ -51,10 +51,13 @@ Fiquei responsável por criar as respectivas camadas e revisar as que meus coleg
 
 ### Hard Skills 
 
-- Neste semestre eu aperfeiçoei meus conhecimentos em Java.
-- Iniciei meus estudos com arquitetura branching
+- Neste semestre eu aperfeiçoei meus conhecimentos em Java;
+- Iniciei meus estudos com branching;
+- Utilizei pela primeira vez o banco de dados Oracle integrado com API.
 
 ### Soft Skills
- - Gestão de tempo
- - Liderança do back-end;
- - Autonomia.
+ - Autonomia: Já estava familiarizada com as tecnologias utilizadas, então não tive grandes dificuldades para realizar minhas tarefas;
+ - Liderança do back-end: como era o membro da equipe que tinha mais conhecimentos sobre o back-end, tomei a liderança para ajudar meus colegas.
+ - Gestão de tempo: como tinha de realizar minhas tasks, ensinar meus colegas a padronização de código e depois revisar o que eles haviam feito, precisei de muita organização.
+ - Comunicação: para realizar todas as tarefas, ensinar meus colegas e revisar seus códigos, tive de ter uma comunicação frequente com a equipe.
+ 
