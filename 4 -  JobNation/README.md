@@ -2,11 +2,11 @@
 
 ## Introdução
 
-A parceira da FATEC junto a empresa JET SOFT, proporcionou aos alunos do 4° semestre do curso de Banco de Dados, o desafio onde eles deveriam apresentar uma solução tecnológica para sanar e atender às necessidades do mesmo. 
+A parceira da FATEC junto a empresa JET SOFT, proporcionou aos alunos do 4° semestre do curso de Banco de Dados, o desafio onde eles deveriam apresentar uma solução tecnológica para sanar e atender às necessidades do mesmo, visando um match entra candidato e vaga.
     
 ## Proposta:
 
-Desenvolver uma API que possibilita a busca de candidatos a partir de uma vaga, buscando uma contratação veloz e assertiva. Dentre os critérios, deverão ser destaques a segurança e o desempenho da aplicação.
+A proposta desse semstre era o desenvolvimento uma API que possibilita a busca de candidatos a partir de uma vaga, buscando uma contratação veloz e assertiva. Dentre os critérios, deveriam ser destaques a segurança e o desempenho da aplicação.
 
 Esta API deve realizar a busca por localização: número de conduções para chegar ao local de trabalho; busca por diferentes critérios: rota(s) de pesquisa estão sendo desenhadas para propiciar liberdade de consulta ao BD. Nesse passo, a aplicação varrerá currículos já cadastrados e identificará candidato(s) mais adequados à vaga.
 
