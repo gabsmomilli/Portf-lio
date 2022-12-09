@@ -26,7 +26,7 @@
 <ul>
     <li>Java na criação de API's (Application Programming Interface) Rest utilizando o Framework SpringBoot;</li>
     <li>Python para automação de processos e manipulação de documentos como csv/</code>;</li>
-    <li><code>SQL</code> para modelagem, criação e manipulação de Banco de Dados Oracle e MySQL.</li>
+    <li>SQL para modelagem, criação e manipulação de Banco de Dados Oracle e MySQL.</li>
     </ul></li>
   <br>
   </ul>
