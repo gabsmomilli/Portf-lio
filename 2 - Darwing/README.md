@@ -36,10 +36,10 @@ O controller é a classe responsável pela preparação de um modelo de Map com 
 
 ### Hard Skills
 - Iniciei meus estudos com a linguagem Java;
-- Iniciei meus estudos com a framework Spring;
+- Iniciei meus estudos com a framework Spring Boot;
 - Iniciei meus estudos com a framework Hibernate.
 
 ### Soft Skills
-- Autonomia;
-- Metodologia Ágil;
-- Comunicação.
+- Autonomia: neste projeto a equipe em que atuei estava reduzida, então tive de me comprometer de realizar o desenvolvimento do back-end sozinha. Consegui pesquisar algumas video aulas sobre Spring Boot;
+- Metodologia Ágil: para realizar as sprints, precisei declarar quais eram as minhas prioridades dentro das tasks definidas;
+- Comunicação: precisei ter uma ótima comunicação com meu grupo afim de realizar a conexão com o banco de dados e disponibilizar os dados para o front-end.
