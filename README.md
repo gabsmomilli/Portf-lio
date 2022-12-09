@@ -19,7 +19,7 @@
    </tr>
   </table>
   
----
+
 
 <h2> Meus Principais Conhecimentos</h2>
 <ul>
@@ -30,7 +30,6 @@
   <br>
   </ul>
 
----
 
  <h2 align="center"> Meus Projetos</h2>
  
