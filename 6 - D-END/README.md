@@ -114,5 +114,5 @@ Feito isso, precisei criar um arquivo ".log" para armazenar os logs sobre o que 
 
 ### Soft Skills
 
-- Gestão de tempo para realizar as tasks definidas; 
-- Trabalho em equipe.
+- Gestão de tempo: para realizar as tasks definidas; 
+- Comunicação: realizamos reuniões regulares para debater o andamento das tarefas definidas.
