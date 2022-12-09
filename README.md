@@ -31,7 +31,7 @@
   </ul>
 
 
- <h2 align="center"> Meus Projetos</h2>
+ <h2 > Meus Projetos</h2>
  
    <p align="justify" style="font-family:roboto;"><li><a href="https://github.com/gabsmomilli/portfolio/tree/main/1%20-%20HeySeries"> 1º Semestre: HeySeries - WebBot para indicações de series a partir de notas e generos</a></li></p>
    <p align="justify" style="font-family:roboto;"><li><a href="https://github.com/gabsmomilli/portfolio/tree/main/2%20-%20Darwing"> 2º Semestre: Darwing - aplicação administrativa de afazeres, sendo para uma única pessoa ou até mesmo para uma empresa</a></li></p>
